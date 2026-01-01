@@ -18,7 +18,8 @@ new #[Layout('components.layouts.guest')] class extends Component
                     <div class="col-xl-4">
                         <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
                             data-aos-duration="1000">
-                            <img src="{{ asset('static/assets/images/svgs/primary-leaf.svg') }}" alt="" class="img-fluid animate-spin" />
+                            <img src="{{ asset('static/assets/images/svgs/primary-leaf.svg') }}" alt=""
+                                class="img-fluid animate-spin" />
                             <p class="mb-0 text-white fs-5 text-opacity-70">
                                 The Amen Trading PLC is a growing and reliable provider of electrical and
                                 electro-mechanical solutions with over eight years of experience in Ethiopia. We focus
@@ -118,9 +119,10 @@ new #[Layout('components.layouts.guest')] class extends Component
     <!-- Mission & Vision Section -->
     <livewire:public.sections.mission_vision :sectionNumber="'01'" />
 
+
     <div class="page-wrapper overflow-hidden">
         <!-- Gallery Section -->
-        <section class="gallery py-5 py-lg-11 py-xl-12">
+        <section class="gallery py-5 py-lg-10">
             <div class="container">
                 <div class="d-flex flex-column gap-5 gap-xl-11">
                     <div class="row gap-7 gap-xl-0">
@@ -147,74 +149,16 @@ new #[Layout('components.layouts.guest')] class extends Component
                             </div>
                         </div>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 1"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 2"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 3"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 4"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 5"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 6"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 7"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="450">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 8"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                            <img src="{{ asset('static/assets/images/placeholder.png') }}" alt="Project Image 9"
-                                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                                data-bs-target="#imageModal" data-image="{{ asset('static/assets/images/placeholder.png') }}">
-                        </div>
-                    </div>
+                    <livewire:public.sections.main_gallery galleryType='legal-status-gallery' />
                 </div>
             </div>
         </section>
-
-        <!-- Image Modal -->
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content border-0">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <img src="" alt="Full Image Preview" class="modal-img">
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
+
+
     <!-- Company History & Rebranding Journey -->
-    <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
+    <section class="stats-facts py-5 py-lg-10 position-relative overflow-hidden">
         <div class="container">
             <div class="row gap-7 gap-xl-0">
                 <div class="col-xl-4 col-xxl-4">
@@ -311,49 +255,81 @@ new #[Layout('components.layouts.guest')] class extends Component
                                     data-aos-duration="1000">
                                     <h2 class="mb-0 text-white">Our Expertise & Strengths</h2>
                                     <p class="fs-5 mb-0 text-white text-opacity-70">
-                                        Technical Expertise: Our team consists of certified engineers, technicians, and
-                                        skilled professionals with diverse backgrounds in electro-mechanical
-                                        engineering. Their experience allows us to manage both simple and complex
-                                        projects with confidence.
+                                        Our team consists of certified engineers, technicians, and skilled professionals
+                                        with deep experience in electro-mechanical engineering—capable of handling both
+                                        simple and highly complex projects with confidence.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
-                            <li class="text-center" data-aos="fade-up" data-aos-delay="200">
-                                <div class="bg-white bg-opacity-10 rounded p-3">
-                                    <h5 class="text-white mb-0">End-to-End Solutions</h5>
-                                    <p class="text-white text-opacity-70 small mb-0">From design and installation to
-                                        maintenance.</p>
-                                </div>
-                            </li>
-                            <li class="text-center" data-aos="fade-up" data-aos-delay="300">
-                                <div class="bg-white bg-opacity-10 rounded p-3">
-                                    <h5 class="text-white mb-0">Tailored Approach</h5>
-                                    <p class="text-white text-opacity-70 small mb-0">Customized services for hotels,
-                                        hospitals, and businesses.</p>
-                                </div>
-                            </li>
-                            <li class="text-center" data-aos="fade-up" data-aos-delay="400">
-                                <div class="bg-white bg-opacity-10 rounded p-3">
-                                    <h5 class="text-white mb-0">Fast Response</h5>
-                                    <p class="text-white text-opacity-70 small mb-0">Emergency repair services with
-                                        minimal downtime.</p>
-                                </div>
-                            </li>
-                            <li class="text-center" data-aos="fade-up" data-aos-delay="500">
-                                <div class="bg-white bg-opacity-10 rounded p-3">
-                                    <h5 class="text-white mb-0">Proven Track Record</h5>
-                                    <p class="text-white text-opacity-70 small mb-0">Successful delivery of projects in
-                                        different sectors.</p>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Card -->
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10 text-center">
+                            <div class="mb-3">
+                                <span class="badge bg-primary text-dark px-3 py-2 rounded-pill">
+                                    01
+                                </span>
+                            </div>
+                            <h5 class="text-white mb-2">End-to-End Solutions</h5>
+                            <p class="text-white text-opacity-70 small mb-0">
+                                From design and installation to long-term maintenance and support.
+                            </p>
+                        </div>
                     </div>
+
+                    <!-- Card -->
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10 text-center">
+                            <div class="mb-3">
+                                <span class="badge bg-primary text-dark px-3 py-2 rounded-pill">
+                                    02
+                                </span>
+                            </div>
+                            <h5 class="text-white mb-2">Tailored Approach</h5>
+                            <p class="text-white text-opacity-70 small mb-0">
+                                Customized solutions for hotels, hospitals, factories, and businesses.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10 text-center">
+                            <div class="mb-3">
+                                <span class="badge bg-primary text-dark px-3 py-2 rounded-pill">
+                                    03
+                                </span>
+                            </div>
+                            <h5 class="text-white mb-2">Fast Response</h5>
+                            <p class="text-white text-opacity-70 small mb-0">
+                                Emergency repair services with minimal downtime and rapid dispatch.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                        <div
+                            class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10 text-center">
+                            <div class="mb-3">
+                                <span class="badge bg-primary text-dark px-3 py-2 rounded-pill">
+                                    04
+                                </span>
+                            </div>
+                            <h5 class="text-white mb-2">Proven Track Record</h5>
+                            <p class="text-white text-opacity-70 small mb-0">
+                                Successfully delivered projects across multiple industries and sectors.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -390,86 +366,95 @@ new #[Layout('components.layouts.guest')] class extends Component
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">Integrity</h5>
-                                        <p class="mb-0">
-                                            Honesty, transparency, and reliability in every decision and interaction. We
-                                            operate with honesty, transparency, and accountability in every interaction
-                                            guided by professionalism.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">Excellence</h5>
-                                        <p class="mb-0">
-                                            Highest standards in project planning, execution, and delivery. Quality is
-                                            not just a goal—it's part of our culture.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">Innovation</h5>
-                                        <p class="mb-0">
-                                            Continuous improvement by adopting modern technologies, tools, and
-                                            techniques to provide smarter and more efficient solutions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">Safety</h5>
-                                        <p class="mb-0">
-                                            Prioritizes the safety of our team, our clients, and the public. We
-                                            prioritize the safety of our team, our clients, and the public by meeting
-                                            industry requirements and regulatory protocols.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">Customer Focus</h5>
-                                        <p class="mb-0">
-                                            We listen carefully to our clients, understand their needs, and provide
-                                            solutions that are aligned with their long-term goals.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">Sustainability</h5>
-                                        <p class="mb-0">
-                                            We promote energy-efficient, reliable, and environmentally responsible
-                                            solutions that support sustainable development.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Values Grid -->
+                <div class="row g-4">
+
+                    <!-- Value Card -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="h-100 p-4 bg-white rounded-4 shadow-sm border">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-3">
+                                Integrity
+                            </span>
+                            <h5 class="mb-2">Honesty & Transparency</h5>
+                            <p class="text-muted mb-0">
+                                We operate with honesty, transparency, and accountability in every
+                                decision and interaction.
+                            </p>
                         </div>
                     </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-100 p-4 bg-white rounded-4 shadow-sm border">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-3">
+                                Excellence
+                            </span>
+                            <h5 class="mb-2">Quality Without Compromise</h5>
+                            <p class="text-muted mb-0">
+                                We maintain the highest standards in planning, execution, and
+                                delivery across all projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-100 p-4 bg-white rounded-4 shadow-sm border">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-3">
+                                Innovation
+                            </span>
+                            <h5 class="mb-2">Forward Thinking</h5>
+                            <p class="text-muted mb-0">
+                                We embrace modern technologies and continuously improve our
+                                solutions to stay ahead.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="h-100 p-4 bg-white rounded-4 shadow-sm border">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-3">
+                                Safety
+                            </span>
+                            <h5 class="mb-2">People First</h5>
+                            <p class="text-muted mb-0">
+                                Safety is non-negotiable. We protect our team, clients, and the
+                                public through strict compliance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="h-100 p-4 bg-white rounded-4 shadow-sm border">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-3">
+                                Customer Focus
+                            </span>
+                            <h5 class="mb-2">Client-Centered Solutions</h5>
+                            <p class="text-muted mb-0">
+                                We listen, understand, and deliver solutions aligned with our
+                                clients’ long-term goals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="h-100 p-4 bg-white rounded-4 shadow-sm border">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-3">
+                                Sustainability
+                            </span>
+                            <h5 class="mb-2">Responsible Growth</h5>
+                            <p class="text-muted mb-0">
+                                We promote energy-efficient and environmentally responsible
+                                solutions for sustainable development.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-choose-us py-5 py-xl-12">
+    <section class="why-choose-us py-5 py-xl-10">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h2 class="mb-3">Why Choose Us</h2>
@@ -596,23 +581,27 @@ new #[Layout('components.layouts.guest')] class extends Component
                         <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="100"
                             data-aos-duration="1000">
                             <div class="meet-team-img position-relative overflow-hidden">
-                                <img src="{{ asset('static/assets/images/team/team-img-1.jpg') }}" alt="team-img" class="img-fluid w-100" />
+                                <img src="{{ asset('static/assets/images/team/team-img-1.jpg') }}" alt="team-img"
+                                    class="img-fluid w-100" />
                                 <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
                                     <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}" alt="twitter" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}"
+                                                    alt="twitter" /></a>
                                         </li>
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-be.svg') }}" alt="be" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-be.svg') }}"
+                                                    alt="be" /></a>
                                         </li>
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}" alt="linkedin" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}"
+                                                    alt="linkedin" /></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -627,23 +616,27 @@ new #[Layout('components.layouts.guest')] class extends Component
                         <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="200"
                             data-aos-duration="1000">
                             <div class="meet-team-img position-relative overflow-hidden">
-                                <img src="{{ asset('static/assets/images/team/team-img-2.jpg') }}" alt="team-img" class="img-fluid w-100" />
+                                <img src="{{ asset('static/assets/images/team/team-img-2.jpg') }}" alt="team-img"
+                                    class="img-fluid w-100" />
                                 <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
                                     <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}" alt="twitter" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}"
+                                                    alt="twitter" /></a>
                                         </li>
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-be.svg') }}" alt="be" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-be.svg') }}"
+                                                    alt="be" /></a>
                                         </li>
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}" alt="linkedin" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}"
+                                                    alt="linkedin" /></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -658,23 +651,27 @@ new #[Layout('components.layouts.guest')] class extends Component
                         <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="300"
                             data-aos-duration="1000">
                             <div class="meet-team-img position-relative overflow-hidden">
-                                <img src="{{ asset('static/assets/images/team/team-img-3.jpg') }}" alt="team-img" class="img-fluid w-100" />
+                                <img src="{{ asset('static/assets/images/team/team-img-3.jpg') }}" alt="team-img"
+                                    class="img-fluid w-100" />
                                 <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
                                     <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}" alt="twitter" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}"
+                                                    alt="twitter" /></a>
                                         </li>
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-be.svg') }}" alt="be" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-be.svg') }}"
+                                                    alt="be" /></a>
                                         </li>
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}" alt="linkedin" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}"
+                                                    alt="linkedin" /></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -689,23 +686,27 @@ new #[Layout('components.layouts.guest')] class extends Component
                         <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="400"
                             data-aos-duration="1000">
                             <div class="meet-team-img position-relative overflow-hidden">
-                                <img src="{{ asset('static/assets/images/team/team-img-4.jpg') }}" alt="team-img" class="img-fluid w-100" />
+                                <img src="{{ asset('static/assets/images/team/team-img-4.jpg') }}" alt="team-img"
+                                    class="img-fluid w-100" />
                                 <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
                                     <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}" alt="twitter" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}"
+                                                    alt="twitter" /></a>
                                         </li>
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-be.svg') }}" alt="be" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-be.svg') }}"
+                                                    alt="be" /></a>
                                         </li>
                                         <li>
                                             <a href="#!"
                                                 class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                    src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}" alt="linkedin" /></a>
+                                                    src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}"
+                                                    alt="linkedin" /></a>
                                         </li>
                                     </ul>
                                 </div>

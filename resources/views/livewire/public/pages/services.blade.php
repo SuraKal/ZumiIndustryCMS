@@ -1,16 +1,29 @@
 <?php
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
+use App\Services\HelperService;
 
 new #[Layout('components.layouts.guest')] class extends Component
 {
-    //
+        protected HelperService $helperService;
+
+    public function boot(HelperService $helperService)
+    {
+        $this->helperService = $helperService;
+    }
+
+    public function getProjectsProperty()
+    {
+        return $this->helperService
+            ->getAllOfferings()
+            ->get();
+    }
 }; ?>
 
 <div class="page-wrapper overflow-hidden">
     <!--  Banner Section -->
     <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end" style="
-          background-image: url({{ asset('static/assets/images/backgrounds/aboutus-banner.jpg') }});
+            background-image: url({{ asset('static/assets/images/backgrounds/aboutus-banner.jpg') }});
         ">
         <div class="container">
             <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
@@ -39,95 +52,58 @@ new #[Layout('components.layouts.guest')] class extends Component
         </div>
     </section>
 
+    @if($this->projects?->isNotEmpty())
+
     <!-- Our Services Section -->
     <section class="our-services bg-light p-1 py-5 p-lg-5 card border-0 shadow-sm rounded-4 m-4">
         <div class="container">
-            <div class="text-center mb-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+
+            <!-- Section Header -->
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h2 class="mb-3 text-white">What we do</h2>
                 <p class="fs-5 text-white">
                     We provide comprehensive, high-quality services tailored to meet modern engineering needs.
                 </p>
             </div>
+
+            <!-- 🔹 Service Thumbnails (Top Section) -->
+
+
+            <!-- 🔹 Service Cards -->
             <div class="row g-4">
+                @foreach($this->projects as $project)
+
                 <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                        <div class="card-body p-4">
-                            <h5 class="mb-3">Electrical Installation</h5>
-                            <p class="mb-0">
-                                Design and installation for residential, commercial, and industrial buildings. Wiring,
-                                power distribution, and lighting solutions.
+
+                    
+                    <div class="card border-0 shadow-sm h-100 bg-white rounded-4">
+                        <div class="card-body p-4 text-center">
+<div class="mx-auto mb-2 rounded-circle border border-2 border-primary shadow-sm d-flex align-items-center justify-content-center"
+                                style="width:120px; height:120px; overflow:hidden;">
+                                <img src="{{ asset($project->getFirstImage()) }}" alt="{{ $project->name }}"
+                                    class="img-fluid" style="object-fit:cover; width:100%; height:100%;">
+                            </div>
+                            <h5 class="mb-3 fw-semibold">
+                                {{ $project?->name }}
+                            </h5>
+
+                            <p class="mb-0 text-muted">
+                                {{ $project?->description }}
                             </p>
+
                         </div>
                     </div>
+
                 </div>
-                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                    <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                        <div class="card-body p-4">
-                            <h5 class="mb-3">Electro-Mechanical Works</h5>
-                            <p class="mb-0">
-                                Installation and maintenance of integrated systems. Smooth operation through
-                                electrical-mechanical integration.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                        <div class="card-body p-4">
-                            <h5 class="mb-3">CCTV & Security Systems</h5>
-                            <p class="mb-0">
-                                Design and installation of surveillance systems. Access control and alarm systems for
-                                complete security.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                    <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                        <div class="card-body p-4">
-                            <h5 class="mb-3">Communication Systems</h5>
-                            <p class="mb-0">
-                                Installation of PBX systems for efficient telecommunication. Data networking solutions
-                                to enhance connectivity.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                    <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                        <div class="card-body p-4">
-                            <h5 class="mb-3">Generator Installation & Maintenance</h5>
-                            <p class="mb-0">
-                                Reliable installation and servicing of generators to provide uninterrupted power supply
-                                during outages.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-                    <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                        <div class="card-body p-4">
-                            <h5 class="mb-3">Fire Alarm Installation</h5>
-                            <p class="mb-0">
-                                Design, installation, and maintenance of fire alarm systems for early detection and
-                                enhanced safety compliance.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                    <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                        <div class="card-body p-4">
-                            <h5 class="mb-3">Maintenance Services</h5>
-                            <p class="mb-0">
-                                Scheduled maintenance and troubleshooting. Emergency repairs to reduce downtime.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
+
         </div>
     </section>
+
+    @endif
+
+
     <!-- Mission & Vision Section -->
     <livewire:public.sections.mission_vision />
 

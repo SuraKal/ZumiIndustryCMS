@@ -26,19 +26,77 @@
         .gallery-img {
             cursor: pointer;
             transition: transform 0.3s ease;
+            max-height: 50vh;
+            object-fit: cover;
         }
 
         .gallery-img:hover {
             transform: scale(1.05);
         }
 
+        /* Modal auto-size to image */
+        .modal-auto-size {
+            max-width: none;
+            width: auto;
+        }
+
+        .modal-content {
+            display: inline-block;
+            background: transparent;
+            position: relative;
+            /* Needed for positioning close icon */
+        }
+
         .modal-img {
-            max-width: 100%;
+            max-width: 90vw;
+            max-height: 90vh;
+            width: auto;
             height: auto;
             border-radius: 8px;
         }
 
+        /* Close icon styling */
+        .modal-close-btn {
+            position: absolute;
+            top: -20px; /* slightly above image */
+            left: 50%;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .modal-close-btn:hover {
+            background: rgba(0, 0, 0, 0.85);
+        }
+
+        /* Icon size inside close button */
+        .modal-close-btn .big-icon {
+            width: 24px;
+            height: 24px;
+            color: #fff;
+            padding: 3px 4px;
+        }
+
+        .modal-body img {
+            width: 40%;
+            height: auto;
+        }
+
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
     </style>
+
 </head>
 
 <body>

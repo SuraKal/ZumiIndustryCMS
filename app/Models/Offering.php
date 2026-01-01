@@ -6,12 +6,12 @@ use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Product extends Model
+class Offering extends Model
 {
-    /** @use HasFactory<\Database\Factories\ProductFactory> */
+    /** @use HasFactory<\Database\Factories\OfferingFactory> */
     use HasFactory;
 
-    protected static function boot()
+        protected static function boot()
     {
         parent::boot();
 
@@ -23,11 +23,6 @@ class Product extends Model
 
     }
 
-
-    public function partner()
-    {
-        return $this->belongsTo(Partner::class);
-    }
     
     public function getFirstImage(){
         return $this->thumbnail ? 'storage/' . $this->thumbnail : 'static/assets/images/project_placeholder.jpg';

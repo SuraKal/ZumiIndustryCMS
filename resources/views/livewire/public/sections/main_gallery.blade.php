@@ -8,6 +8,7 @@ new class extends Component {
 
     protected HelperService $helperService;
 
+    public string $galleryType;
     public function boot(HelperService $helperService)
     {
         $this->helperService = $helperService;
@@ -15,7 +16,7 @@ new class extends Component {
 
     public function getGallerysProperty()
     {
-        $images = $this->helperService->getGalleryImages('my-gallery') ?? [];
+        $images = $this->helperService->getGalleryImages($this->galleryType) ?? [];
         $perPage = 8;
         $page = request()->get('page', 1);
         $page = max(1, (int) $page); // Ensure valid page number
@@ -31,15 +32,17 @@ new class extends Component {
 };
 
 ?>
-
 <div>
+
+
     @if($this->gallerys?->isNotEmpty())
     <div class="row g-4">
         @foreach($this->gallerys as $index => $image)
         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" wire:key="gallery-{{ md5($image) }}">
-            <img src="{{ asset($image) }}"
-                class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
-                data-bs-target="#imageModal" data-image="{{ asset($image) }}" alt="Project Image {{ $index + 1 }}" >
+
+            <img src="{{ asset($image) }}" class="img-fluid rounded shadow gallery-img" data-bs-toggle="modal"
+                data-bs-target="#imageModal" data-image="{{ asset($image) }}" alt="Project Image {{ $index + 1 }}">
+
         </div>
         @endforeach
     </div>
@@ -49,7 +52,9 @@ new class extends Component {
             <div class="row justify-content-center">
                 <div class="col-lg-7">
 
-                    <span class="hero-subtitle text-uppercase mb-3 d-block" data-aos="fade-up">Sorry!</span>
+                    <span class="hero-subtitle text-uppercase mb-3 d-block" data-aos="fade-up">
+                        Sorry!
+                    </span>
 
                     <h2 class="hero-title mb-4" data-aos="fade-up" data-aos-delay="100">
                         No Galleries Uploaded
@@ -64,15 +69,16 @@ new class extends Component {
                         data-aos="zoom-in" data-aos-delay="300" />
 
                     <div class="mt-4" data-aos="fade-up" data-aos-delay="400">
-                        <a href="{{ route('home') }}" class="btn btn-primary px-4 py-2 me-2 text-white ">
+                        <a href="{{ route('home') }}" class="btn btn-primary px-4 py-2 me-2 text-white">
                             <iconify-icon icon="lucide:home" class="fs-4 flex-shrink-0 me-2 text-white fa-2x">
-                                </iconify-icon>
+                            </iconify-icon>
                             Go Home
                         </a>
 
-                        <a href="{{ route('public.contact') }}" class="btn btn-outline-brand px-4 py-2 text-white ">
+                        <a href="{{ route('public.contact') }}" class="btn btn-outline-brand px-4 py-2 text-white">
                             <iconify-icon icon="lucide:phone" class="fs-4 flex-shrink-0 text-white fa-2x">
-                                </iconify-icon> Contact Us
+                            </iconify-icon>
+                            Contact Us
                         </a>
                     </div>
 
@@ -83,17 +89,22 @@ new class extends Component {
     @endif
 
 
-        <!-- Image Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-auto-size">
             <div class="modal-content border-0">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Iconify Close Button -->
+                <div class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon class="big-icon" icon="mingcute:close-fill"></iconify-icon>
                 </div>
-                <div class="modal-body p-0">
+
+                <div class="modal-body p-0 text-center">
                     <img src="" alt="Full Image Preview" class="modal-img">
                 </div>
+
             </div>
         </div>
     </div>
+
 </div>

@@ -35,57 +35,18 @@ new class extends Component {
                             </div>
                             <div class="d-flex flex-column gap-3">
                                 <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
-                                    <li class="header-item">
-                                        <a href="{{ route('home') }}" aria-current="true"
-                                            class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
-                                                src="{{ asset('static/assets/images/svgs/secondary-leaf.svg') }}" alt="" width="20"
-                                                height="20" class="img-fluid animate-spin" />Home</a>
-                                    </li>
-                                    <li class="header-item">
-                                        <a href="{{ route('public.about') }}"
-                                            class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                                                src="{{ asset('static/assets/images/svgs/secondary-leaf.svg') }}" alt="" width="20"
-                                                height="20" class="img-fluid animate-spin" />About</a>
-                                    </li>
-                                    
-                                    <li class="header-item">
-                                        <a href="{{ route('public.products') }}"
-                                            class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                                                src="{{ asset('static/assets/images/svgs/secondary-leaf.svg') }}" alt="" width="20"
-                                                height="20" class="img-fluid animate-spin" />Products</a>
-                                    </li>
-                                    <li class="header-item">
-                                        <a href="{{ route('public.galleries') }}"
-                                            class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                                                src="{{ asset('static/assets/images/svgs/secondary-leaf.svg') }}" alt="" width="20"
-                                                height="20" class="img-fluid animate-spin" />Gallery</a>
-                                    </li>
 
-                                    <li class="header-item">
-                                        <a href="{{ route('public.projects') }}"
-                                            class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                                                src="{{ asset('static/assets/images/svgs/secondary-leaf.svg') }}" alt="" width="20"
-                                                height="20" class="img-fluid animate-spin" />Projects</a>
-                                    </li>
-                                    <li class="header-item">
-                                        <a href="{{ route('public.blogs') }}" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                                                src="{{ asset('static/assets/images/svgs/secondary-leaf.svg') }}" alt="" width="20"
-                                                height="20" class="img-fluid animate-spin" />Blog</a>
-                                    </li>
-                                    <li class="header-item">
-                                        <a href="{{ route('public.services') }}"
-                                            class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                                                src="{{ asset('static/assets/images/svgs/secondary-leaf.svg') }}" alt="" width="20"
-                                                height="20" class="img-fluid animate-spin" />Services</a>
-                                    </li>
-                                    <li class="header-item">
-                                        <a href="{{ route('public.contact') }}"
-                                            class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                                                src="{{ asset('static/assets/images/svgs/secondary-leaf.svg') }}" alt="" width="20"
-                                                height="20" class="img-fluid animate-spin" />Contact</a>
-                                    </li>
+                                    <x:public.links.nav-link route="home">Home</x:public.links.nav-link>
+                                    <x:public.links.nav-link route="public.about">About</x:public.links.nav-link>
+                                    <x:public.links.nav-link route="public.services">Services</x:public.links.nav-link>
+                                    <x:public.links.nav-link route="public.products">Products</x:public.links.nav-link>
+                                    <x:public.links.nav-link route="public.galleries">Gallery</x:public.links.nav-link>
+                                    <x:public.links.nav-link route="public.projects">Projects</x:public.links.nav-link>
+                                    <x:public.links.nav-link route="public.blogs">Blog</x:public.links.nav-link>
+                                    <x:public.links.nav-link route="public.contact">Contact</x:public.links.nav-link>
+
                                 </ul>
-                                <div class="hstack">
+                                {{-- <div class="hstack">
                                     <div class="d-flex align-items-center gap-3 mx-2">
                                         <a href="https://instagram.com/TATPLC16" target="_blank"
                                             rel="noopener noreferrer" class="text-black" aria-label="Instagram">
@@ -104,7 +65,9 @@ new class extends Component {
                                             <iconify-icon icon="fa-brands:linkedin" class="fs-5"></iconify-icon>
                                         </a>
                                     </div>
-                                </div>
+                                </div> --}}
+
+                                <livewire:public.sections.header_socialmedia>
                             </div>
                             <div>
                                 <a class="text-dark" href="tel:+251901368836">+251 901 368 836</a>

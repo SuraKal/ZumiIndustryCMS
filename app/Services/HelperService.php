@@ -9,9 +9,10 @@
     use App\Models\Page;
     use App\Models\Setting;
     use App\Models\Faq;
-use App\Models\Project;
-use App\Models\Blog\Post;
 use App\Models\Product;
+use App\Models\Project;
+use App\Models\Offering;
+use App\Models\Blog\Post;
 
 class HelperService
 {
@@ -30,6 +31,10 @@ class HelperService
     public function getAllProjects()
     {
         return Project::query()->where('is_visible', true);
+    }
+    public function getAllOfferings()
+    {
+        return Offering::query()->where('is_visible', true);
     }
     public function getAllProducts()
     {

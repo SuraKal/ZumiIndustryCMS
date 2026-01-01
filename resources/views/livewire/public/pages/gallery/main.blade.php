@@ -75,7 +75,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                         </div>
                     </div>
 
-                    <livewire:public.sections.main_gallery />
+                    <livewire:public.sections.main_gallery galleryType='my-gallery'/>
                 </div>
             </div>
         </section>

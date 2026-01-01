@@ -43,7 +43,7 @@ new class extends Component {
                         <!-- Product Thumbnail -->
                         <div
                             class="flex-grow-1  rounded-top d-flex align-items-center justify-content-center text-center border">
-                            <img src="{{ asset($project?->thumbnail ?? 'static/assets/images/project_placeholder.jpg') }}"
+                            <img src="{{ asset($project?->getFirstImage()) }}"
                                 alt="{{ $project?->name }}" class="img-fluid rounded"
                                 style="height: 250px; object-fit: cover;">
                         </div>

@@ -166,27 +166,51 @@ new class extends Component {
 
 
 
-    <footer class="footer bg-dark py-5 py-lg-11">
+    <footer class="footer bg-dark py-5 py-lg-10">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 mb-8 mb-xl-0">
                     <div class="d-flex flex-column gap-8 pe-xl-5">
                         <h2 class="mb-0 text-white">Ready to power your project?</h2>
                         <div class="d-flex flex-column gap-2">
-                            <a href="mailto:theamentradingplc16@gmail.com"
-                                class="link-hover hstack gap-3 text-white fs-5">
+                            
+                            
+                            @if(!empty($emails))
+
+                            <span class="hstack gap-3 text-white fs-5">
                                 <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
-                                theamentradingplc16@gmail.com
-                            </a>
-                            <a href="tel:+251901368836" class="link-hover hstack gap-3 text-white fs-5">
+                                
+
+                                        @foreach($emails as $index => $email)
+                                            <a href="mailto:{{ $email }}" class="text-white fs-5 ">
+                                                {{ $email }}
+                                            </a>
+                                        @if($index < count($emails) - 1) / @endif @endforeach 
+                            </span>
+                            @endif
+
+
+                            @if(!empty($phones))
+
+                            <span class="hstack gap-3 text-white fs-5">
                                 <iconify-icon icon="lucide:phone" class="fs-7 text-primary"></iconify-icon>
-                                +251 901 368 836 / +251 912 943 311
-                            </a>
-                            <a href="https://maps.app.goo.gl/example" target="_blank"
+                                
+
+                                        @foreach($phones as $index => $phone)
+                                            <a href="tel:{{ $phone }}" class="text-white fs-5 ">
+                                                {{ $phone }}
+                                            </a>
+                                        @if($index < count($phones) - 1) / @endif @endforeach 
+                            </span>
+                            @endif
+                            
+                            @if(!empty($address))
+                            <a
                                 class="link-hover hstack gap-3 text-white fs-5">
                                 <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
-                                Addis Ababa, Mexico Sengatera, Yobek Business Center
+                                {{ $address }}
                             </a>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -212,31 +236,9 @@ new class extends Component {
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-xl-2 mb-8 mb-xl-0 d-none">
-                    <h5 class="text-white mb-4">Follow Us</h5>
-                    <div class="d-flex align-items-center gap-3">
-                        <a href="https://t.me/TATPLC16" target="_blank" rel="noopener noreferrer" class="text-white"
-                            aria-label="Telegram">
-                            <iconify-icon icon="fa-brands:telegram" class="fs-5"></iconify-icon>
-                        </a>
-                        <a href="https://instagram.com/TATPLC16" target="_blank" rel="noopener noreferrer"
-                            class="text-white" aria-label="Instagram">
-                            <iconify-icon icon="fa-brands:instagram" class="fs-5"></iconify-icon>
-                        </a>
-                        <a href="https://facebook.com/TATPLC16" target="_blank" rel="noopener noreferrer"
-                            class="text-white" aria-label="Facebook">
-                            <iconify-icon icon="fa-brands:facebook" class="fs-5"></iconify-icon>
-                        </a>
-                        <a href="https://twitter.com/TATPLC16" target="_blank" rel="noopener noreferrer"
-                            class="text-white" aria-label="Twitter">
-                            <iconify-icon icon="fa-brands:twitter" class="fs-5"></iconify-icon>
-                        </a>
-                        <a href="https://www.linkedin.com/company/the-amen-trading-plc" target="_blank"
-                            rel="noopener noreferrer" class="text-white" aria-label="LinkedIn">
-                            <iconify-icon icon="fa-brands:linkedin" class="fs-5"></iconify-icon>
-                        </a>
-                    </div>
-                </div>
+                
+                <livewire:public.sections.footer_socialmedia />
+
                 <div class="col-md-3 col-xl-3 mb-8 mb-xl-0">
                     <h5 class="text-white mb-4">Quick Links</h5>
                     <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">

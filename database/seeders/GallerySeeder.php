@@ -17,6 +17,11 @@ class GallerySeeder extends Seeder
                 'title' => 'My Gallery',
                 'slug' => 'my-gallery',
                 'description' => 'A collection of images to be used on the main gallery section of site.'
+            ],
+            [
+                'title' => 'Legal Status Gallery',
+                'slug' => 'legal-status-gallery',
+                'description' => 'A collection of images to be used on the legal status section of site.'
             ]
         ];
         foreach ($data as $item) {

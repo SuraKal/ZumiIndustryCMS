@@ -25,7 +25,6 @@ class GalleryForm
                     ->disabled()
                     ->default(null)
                     ->columnSpanFull(),
-
                 Section::make('Gallery Images')
                     ->collapsible()
                     ->collapsed(false)

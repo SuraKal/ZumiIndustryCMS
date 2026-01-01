@@ -133,200 +133,178 @@ new #[Layout('components.layouts.guest')] class extends Component
                 <img src="{{ asset('static/assets/images/backgrounds/stats-facts-bg.svg') }}" alt="" class="img-fluid" />
             </div>
         </section>
+
+
+
         <!-- Featured Projects Section -->
-        <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
-            <div class="d-flex flex-column gap-5 gap-xl-11">
-                <div class="container">
-                    <div class="row gap-7 gap-xl-0">
-                        <div class="col-xl-4 col-xxl-4">
-                            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                                data-aos-duration="1000">
-                                <span
-                                    class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">02</span>
-                                <hr class="border-line" />
-                                <span class="badge text-bg-dark">Industries We Serve</span>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-xxl-7">
-                            <div class="row">
-                                <div class="col-xxl-8">
-                                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                                        data-aos-duration="1000">
-                                        <h2 class="mb-0">Industries We Serve</h2>
-                                        <p class="fs-5 mb-0">
-                                            We deliver specialized solutions across key sectors in Ethiopia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+<section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
+    <div class="d-flex flex-column gap-5 gap-xl-11">
+
+        <!-- Section Header -->
+        <div class="container">
+            <div class="row gap-7 gap-xl-0">
+                <div class="col-xl-4">
+                    <div class="d-flex align-items-center gap-7 py-2"
+                         data-aos="fade-right"
+                         data-aos-delay="100"
+                         data-aos-duration="1000">
+                        <span
+                            class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">
+                            02
+                        </span>
+                        <hr class="border-line" />
+                        <span class="badge text-bg-dark">Industries We Serve</span>
                     </div>
                 </div>
-                <div class="featured-projects-slider px-3">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="portfolio d-flex flex-column gap-4 h-100">
-                                <div
-                                    class="flex-grow-1 bg-light rounded-top p-4 d-flex align-items-center justify-content-center text-center border d-flex flex-column justify-content-center">
-                                    <div>
-                                        <i class="fa fa-hotel fa-3x text-primary mb-3"></i>
-                                        <h5 class="mb-0 text-white">Hotels & Resorts</h5>
-                                    </div>
-                                </div>
-                                <div
-                                    class="portfolio-details d-flex flex-column gap-3 p-4 bg-white rounded-bottom shadow-sm flex-shrink-0 border-top">
-                                    <div class="hstack gap-2 flex-wrap">
-                                        <span class="badge text-dark border">Electrical Installation</span>
-                                        <br />
-                                        <span class="badge text-dark border">Security Systems</span>
-                                    </div>
-                                    <p class="mb-0 small text-muted">
-                                        Comprehensive power and surveillance for hospitality excellence.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio d-flex flex-column gap-4 h-100">
-                                <div
-                                    class="flex-grow-1 bg-light rounded-top p-4 d-flex align-items-center justify-content-center text-center border d-flex flex-column justify-content-center">
-                                    <div>
-                                        <i class="fa fa-hospital fa-3x text-primary mb-3"></i>
-                                        <h5 class="mb-0 text-white">
-                                            Hospitals & Healthcare Facilities
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div
-                                    class="portfolio-details d-flex flex-column gap-3 p-4 bg-white rounded-bottom shadow-sm flex-shrink-0 border-top">
-                                    <div class="hstack gap-2 flex-wrap">
-                                        <span class="badge text-dark border">Generator Services</span>
-                                        <br />
-                                        <span class="badge text-dark border">Fire Alarms</span>
-                                    </div>
-                                    <p class="mb-0 small text-muted">
-                                        Uninterrupted backup and safety for life-saving environments.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio d-flex flex-column gap-4 h-100">
-                                <div
-                                    class="flex-grow-1 bg-light rounded-top p-4 d-flex align-items-center justify-content-center text-center border d-flex flex-column justify-content-center">
-                                    <div>
-                                        <i class="fa fa-university fa-3x text-primary mb-3"></i>
-                                        <h5 class="mb-0 text-white">Government Offices & Guest Houses</h5>
-                                    </div>
-                                </div>
-                                <div
-                                    class="portfolio-details d-flex flex-column gap-3 p-4 bg-white rounded-bottom shadow-sm flex-shrink-0 border-top">
-                                    <div class="hstack gap-2 flex-wrap">
-                                        <span class="badge text-dark border">Communication Systems</span>
-                                        <br />
-                                        <span class="badge text-dark border">Maintenance</span>
-                                    </div>
-                                    <p class="mb-0 small text-muted">
-                                        Robust networks and ongoing support for public sector efficiency.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio d-flex flex-column gap-4 h-100">
-                                <div
-                                    class="flex-grow-1 bg-light rounded-top p-4 d-flex align-items-center justify-content-center text-center border d-flex flex-column justify-content-center">
-                                    <div>
-                                        <i class="fa fa-industry fa-3x text-primary mb-3"></i>
-                                        <h5 class="mb-0 text-white">
-                                            Factories & Industrial Plants
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div
-                                    class="portfolio-details d-flex flex-column gap-3 p-4 bg-white rounded-bottom shadow-sm flex-shrink-0 border-top">
-                                    <div class="hstack gap-2 flex-wrap">
-                                        <span class="badge text-dark border">Electro-Mechanical Works</span>
-                                        <br />
-                                        <span class="badge text-dark border">Power Distribution</span>
-                                    </div>
-                                    <p class="mb-0 small text-muted">
-                                        Integrated systems for optimal industrial operations.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio d-flex flex-column gap-4 h-100">
-                                <div
-                                    class="flex-grow-1 bg-light rounded-top p-4 d-flex align-items-center justify-content-center text-center border d-flex flex-column justify-content-center">
-                                    <div>
-                                        <i class="fa fa-bed fa-3x text-primary mb-3"></i>
-                                        <h5 class="mb-0 text-white">Warehouses & Logistics Centers</h5>
-                                    </div>
-                                </div>
-                                <div
-                                    class="portfolio-details d-flex flex-column gap-3 p-4 bg-white rounded-bottom shadow-sm flex-shrink-0 border-top">
-                                    <div class="hstack gap-2 flex-wrap">
-                                        <span class="badge text-dark border">CCTV Systems</span>
-                                        <br />
-                                        <span class="badge text-dark border">Access Control</span>
-                                    </div>
-                                    <p class="mb-0 small text-muted">
-                                        Secure monitoring for seamless supply chain management.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio d-flex flex-column gap-4 h-100">
-                                <div
-                                    class="flex-grow-1 bg-light rounded-top p-4 d-flex align-items-center justify-content-center text-center border d-flex flex-column justify-content-center">
-                                    <div>
-                                        <h5 class="mb-0 text-white">
-                                            Commercial Buildings
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div
-                                    class="portfolio-details d-flex flex-column gap-3 p-4 bg-white rounded-bottom shadow-sm flex-shrink-0 border-top">
-                                    <div class="hstack gap-2 flex-wrap">
-                                        <span class="badge text-dark border">Fire Detection</span>
-                                        <br />
-                                        <span class="badge text-dark border">Structured Cabling</span>
-                                    </div>
-                                    <p class="mb-0 small text-muted">
-                                        Advanced fire safety and networking for modern offices.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio d-flex flex-column gap-4 h-100">
-                                <div
-                                    class="flex-grow-1 bg-light rounded-top p-4 d-flex align-items-center justify-content-center text-center border d-flex flex-column justify-content-center text-white">
-                                    <div>
-                                        <i class="fa fa-home fa-3x text-primary mb-3"></i>
-                                        <h5 class="mb-0 text-white">Residential Developments</h5>
-                                    </div>
-                                </div>
-                                <div
-                                    class="portfolio-details d-flex flex-column gap-3 p-4 bg-white rounded-bottom shadow-sm flex-shrink-0 border-top">
-                                    <div class="hstack gap-2 flex-wrap">
-                                        <span class="badge text-dark border">Electrical Systems</span>
-                                        <br />
-                                        <span class="badge text-dark border">Smart Wiring</span>
-                                    </div>
-                                    <p class="mb-0 small text-muted">
-                                        Reliable and future-proof installations for homes and communities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-xl-8 col-xxl-7">
+                    <div class="d-flex flex-column gap-3"
+                         data-aos="fade-up"
+                         data-aos-delay="100"
+                         data-aos-duration="1000">
+                        <h2 class="mb-0">Industries We Serve</h2>
+                        <p class="fs-5 mb-0">
+                            We deliver specialized solutions across key sectors in Ethiopia.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Slider -->
+        <div class="featured-projects-slider px-3">
+            <div class="owl-carousel owl-theme">
+
+                <!-- Hotels -->
+                <div class="item">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
+                        <div class="bg-dark text-center px-4 py-5">
+                            <i class="fa fa-hotel fa-3x text-primary mb-3"></i>
+                            <h5 class="mb-0 text-white fw-semibold text-truncate">Hotels & Resorts</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge border text-dark me-1">Electrical Installation</span>
+                                <span class="badge border text-dark">Security Systems</span>
+                            </div>
+                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
+                                Comprehensive power and surveillance for hospitality excellence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hospitals -->
+                <div class="item">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
+                        <div class="bg-dark text-center px-4 py-5">
+                            <i class="fa fa-hospital fa-3x text-primary mb-3"></i>
+                            <h5 class="mb-0 text-white fw-semibold text-truncate">
+                                Hospitals & Healthcare Facilities
+                            </h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge border text-dark me-1">Generator Services</span>
+                                <span class="badge border text-dark">Fire Alarms</span>
+                            </div>
+                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
+                                Uninterrupted backup and safety for life-saving environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Government -->
+                <div class="item">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
+                        <div class="bg-dark text-center px-4 py-5">
+                            <i class="fa fa-university fa-3x text-primary mb-3"></i>
+                            <h5 class="mb-0 text-white fw-semibold text-truncate">
+                                Government Offices & Guest Houses
+                            </h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge border text-dark me-1">Communication Systems</span>
+                                <span class="badge border text-dark">Maintenance</span>
+                            </div>
+                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
+                                Robust networks and ongoing support for public sector efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industrial -->
+                <div class="item">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
+                        <div class="bg-dark text-center px-4 py-5">
+                            <i class="fa fa-industry fa-3x text-primary mb-3"></i>
+                            <h5 class="mb-0 text-white fw-semibold text-truncate">
+                                Factories & Industrial Plants
+                            </h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge border text-dark me-1">Electro-Mechanical</span>
+                                <span class="badge border text-dark">Power Distribution</span>
+                            </div>
+                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
+                                Integrated systems for optimal industrial operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warehouses -->
+                <div class="item">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
+                        <div class="bg-dark text-center px-4 py-5">
+                            <i class="fa fa-bed fa-3x text-primary mb-3"></i>
+                            <h5 class="mb-0 text-white fw-semibold text-truncate">
+                                Warehouses & Logistics Centers
+                            </h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge border text-dark me-1">CCTV Systems</span>
+                                <span class="badge border text-dark">Access Control</span>
+                            </div>
+                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
+                                Secure monitoring for seamless supply chain management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Residential -->
+                <div class="item">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
+                        <div class="bg-dark text-center px-4 py-5">
+                            <i class="fa fa-home fa-3x text-primary mb-3"></i>
+                            <h5 class="mb-0 text-white fw-semibold text-truncate">
+                                Residential Developments
+                            </h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge border text-dark me-1">Electrical Systems</span>
+                                <span class="badge border text-dark">Smart Wiring</span>
+                            </div>
+                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
+                                Reliable and future-proof installations for homes and communities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 
         <!-- Services Section -->
         <livewire:public.sections.services />
