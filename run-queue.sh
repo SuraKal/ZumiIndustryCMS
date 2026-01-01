@@ -3,7 +3,7 @@
 # Purpose: Run all available queued jobs safely on shared hosting (cPanel)
 
 # === CONFIGURATION ===
-PROJECT_DIR="/home/darihaga/laravel_files/go_coffee"   # change this to your Laravel app root
+PROJECT_DIR="/home/darihaga/laravel_files/amentradingmain"   # change this to your Laravel app root
 PHP_PATH="/usr/local/bin/php"              # confirm path via `which php`
 LOG_FILE="$PROJECT_DIR/storage/logs/queue.log"
 
