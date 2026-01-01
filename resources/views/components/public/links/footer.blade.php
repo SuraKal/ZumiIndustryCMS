@@ -1,0 +1,10 @@
+    <script src="{{ asset('static/assets/vendors/bootstrap/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('static/assets/vendors/gsap/gsap.min.js') }}"></script>
+    <script src="{{ asset('static/assets/vendors/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('static/assets/vendors/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('static/assets/vendors/glightbox/glightbox.min.js') }}"></script>
+    <script src="{{ asset('static/assets/vendors/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('static/assets/vendors/aos/aos.js') }}"></script>
+    <script src="{{ asset('static/assets/vendors/purecounter/purecounter.js') }}"></script>
+    <script src="{{ asset('static/assets/js/custom.js') }}"></script>
+    <script src="{{ asset('static/assets/js/send_email.js') }}"></script>
