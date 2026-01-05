@@ -9,8 +9,8 @@ new #[Layout('components.layouts.guest')] class extends Component
 
 <div class="page-wrapper overflow-hidden">
     <!--  Banner Section -->
-    <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end" style="
-          background-image: url({{ asset('static/assets/images/backgrounds/aboutus-banner.jpg') }});
+    <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end" style="background-image: url({{ asset('static/assets/images/backgrounds/home-backfall.jpg') }});
+
         ">
         <div class="container">
             <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">

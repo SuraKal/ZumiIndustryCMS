@@ -86,7 +86,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                                     {{ $overview }}
                                 </p>
                             </div>
-                            <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
+                            <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end d-none">
                                 <p class="mb-0">Duration</p>
                                 <p class="mb-0 text-dark fs-5 fw-medium">Ongoing Projects</p>
                             </div>

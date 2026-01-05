@@ -106,62 +106,137 @@ new #[Layout('components.layouts.guest')] class extends Component
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">1. Consultation & Site Survey</h5>
-                                        <p class="mb-0">
-                                            Understanding client needs and site requirements.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">2. Design & Planning</h5>
-                                        <p class="mb-0">
-                                            Creating tailored engineering solutions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">3. Installation & Integration</h5>
-                                        <p class="mb-0">
-                                            Executing projects with precision and safety.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">4. Testing & Commissioning</h5>
-                                        <p class="mb-0">
-                                            Ensuring optimal performance of all systems.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                                <div class="card border-0 shadow-sm h-100 bg-white rounded">
-                                    <div class="card-body p-4">
-                                        <h5 class="mb-3 text-primary">5. Maintenance & Support</h5>
-                                        <p class="mb-0">
-                                            Providing long-term reliability and emergency support.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="row g-4">
+    <!-- Step 1 -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
+            <div class="step-circle mx-auto mb-3">
+                <i class="fa fa-comments text-white fa-lg"></i>
+                <span class="step-number">1</span>
+            </div>
+            <h5 class="text-primary mb-2 gradient-underline">Consultation & Site Survey</h5>
+            <p class="text-muted mb-0">
+                Understanding client needs and site requirements.
+            </p>
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
+            <div class="step-circle mx-auto mb-3">
+                <i class="fa fa-pencil-ruler text-white fa-lg"></i>
+                <span class="step-number">2</span>
+            </div>
+            <h5 class="text-primary mb-2 gradient-underline">Design & Planning</h5>
+            <p class="text-muted mb-0">
+                Creating tailored engineering solutions.
+            </p>
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
+            <div class="step-circle mx-auto mb-3">
+                <i class="fa fa-tools text-white fa-lg"></i>
+                <span class="step-number">3</span>
+            </div>
+            <h5 class="text-primary mb-2 gradient-underline">Installation & Integration</h5>
+            <p class="text-muted mb-0">
+                Executing projects with precision and safety.
+            </p>
+        </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
+            <div class="step-circle mx-auto mb-3">
+                <i class="fa fa-check-circle text-white fa-lg"></i>
+                <span class="step-number">4</span>
+            </div>
+            <h5 class="text-primary mb-2 gradient-underline">Testing & Commissioning</h5>
+            <p class="text-muted mb-0">
+                Ensuring optimal performance of all systems.
+            </p>
+        </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
+            <div class="step-circle mx-auto mb-3">
+                <i class="fa fa-headset text-white fa-lg"></i>
+                <span class="step-number">5</span>
+            </div>
+            <h5 class="text-primary mb-2 gradient-underline">Maintenance & Support</h5>
+            <p class="text-muted mb-0">
+                Providing long-term reliability and emergency support.
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Card gradient background */
+.bg-gradient-light {
+    background: linear-gradient(135deg, #fdfdfd, #f0f0f0);
+}
+
+/* Card hover effect */
+.step-card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+/* Step circle with icon */
+.step-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7fb2ff, #ff0000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.step-number {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background: #ffc107;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border: 2px solid #fff;
+}
+
+/* Gradient underline for titles */
+.gradient-underline {
+    display: inline-block;
+    position: relative;
+}
+.gradient-underline::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50%;
+    background: linear-gradient(90deg, #ec4b4b, #530707);
+    margin-top: 4px;
+    border-radius: 2px;
+}
+</style>
+
             </div>
         </div>
     </section>

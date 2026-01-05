@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="{{ asset('static/assets/css/styles.css') }}" />
 
     <style>
+    html, body {
+    overflow-x: hidden;
+}
         .gallery-img {
             cursor: pointer;
             transition: transform 0.3s ease;

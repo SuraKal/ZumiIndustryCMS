@@ -8,7 +8,7 @@ new class extends Component {
 };?>
 
 
-<header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+<header class="header border-4 border-primary border-top position-fixed start-0 top-0" style="width:100vw !important;">
     <div class="container">
         <div class="header-wrapper d-flex align-items-center justify-content-between">
             <div class="logo">
@@ -22,7 +22,7 @@ new class extends Component {
             <div class="d-flex align-items-center gap-4">
                 <div class="btn-group">
                     <button
-                        class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+                        class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle mr-2"
                         type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                         <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark">
                         </iconify-icon>
