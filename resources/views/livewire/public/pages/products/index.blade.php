@@ -99,7 +99,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/deodrant_spary/Aura.png"
+                  src="{{ asset('static/assets/img/deodrant_spary/Aura.png') }}"
                   alt="Aura product"
                 />
                 <div class="card-body">
@@ -117,7 +117,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/deodrant_spary/Vanilla.png"
+                  src="{{ asset('static/assets/img/deodrant_spary/Vanilla.png') }}"
                   alt="Vanilla product"
                 />
                 <div class="card-body">
@@ -135,7 +135,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/deodrant_spary/Rosea.png"
+                  src="{{ asset('static/assets/img/deodrant_spary/Rosea.png') }}"
                   alt="Rosea product"
                 />
                 <div class="card-body">
@@ -153,7 +153,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/deodrant_spary/Pure.png"
+                  src="{{ asset('static/assets/img/deodrant_spary/Pure.png') }}"
                   alt="Pure product"
                 />
                 <div class="card-body">
@@ -170,7 +170,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/deodrant_spary/Pinkie.png"
+                  src="{{ asset('static/assets/img/deodrant_spary/Pinkie.png') }}"
                   alt="Pinkie product"
                 />
                 <div class="card-body">
@@ -188,7 +188,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/night_allure.png"
+                  src="{{ asset('static/assets/img/body_splash/night_allure.png') }}"
                   alt="Ask Night Allure product"
                 />
                 <div class="card-body">
@@ -206,7 +206,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Pink_Crush.png"
+                  src="{{ asset('static/assets/img/body_splash/Pink_Crush.png') }}"
                   alt="Pink Crush product"
                 />
                 <div class="card-body">
@@ -224,7 +224,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Blush_Charm.png"
+                  src="{{ asset('static/assets/img/body_splash/Blush_Charm.png') }}"
                   alt="Blush Charm product"
                 />
                 <div class="card-body">
@@ -243,7 +243,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Rose_Embrace.png"
+                  src="{{ asset('static/assets/img/body_splash/Rose_Embrace.png') }}"
                   alt="Rose Embrace product"
                 />
                 <div class="card-body">
@@ -263,7 +263,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Midnight_Aura.png"
+                  src="{{ asset('static/assets/img/body_splash/Midnight_Aura.png') }}"
                   alt="Midnight Aura product"
                 />
                 <div class="card-body">
@@ -283,7 +283,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Coconut_Desire.png"
+                  src="{{ asset('static/assets/img/body_splash/Coconut_Desire.png') }}"
                   alt="Coconut Desire product"
                 />
                 <div class="card-body">
@@ -303,7 +303,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Forever_Bloom.png"
+                  src="{{ asset('static/assets/img/body_splash/Forever_Bloom.png') }}"
                   alt="Forever Bloom product"
                 />
                 <div class="card-body">
@@ -320,7 +320,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/The_One_Rose.png"
+                  src="{{ asset('static/assets/img/body_splash/The_One_Rose.png') }}"
                   alt="The One Rose product"
                 />
                 <div class="card-body">
@@ -338,7 +338,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Petal_Silk.png"
+                  src="{{ asset('static/assets/img/body_splash/Petal_Silk.png') }}"
                   alt="Petal Silk product"
                 />
                 <div class="card-body">
@@ -358,7 +358,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Golden_Wish.png"
+                  src="{{ asset('static/assets/img/body_splash/Golden_Wish.png') }}"
                   alt="Golden Wish product"
                 />
                 <div class="card-body">
@@ -378,7 +378,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Stellar_Glow.png"
+                  src="{{ asset('static/assets/img/body_splash/Stellar_Glow.png') }}"
                   alt="Stellar Glow product"
                 />
                 <div class="card-body">
@@ -395,7 +395,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Aqua_Breeze.png"
+                  src="{{ asset('static/assets/img/body_splash/Aqua_Breeze.png') }}"
                   alt="Aqua Breeze product"
                 />
                 <div class="card-body">
@@ -415,7 +415,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Nude_Vanilla.png"
+                  src="{{ asset('static/assets/img/body_splash/Nude_Vanilla.png') }}"
                   alt="Nude Vanilla product"
                 />
                 <div class="card-body">
@@ -435,7 +435,7 @@ Strategic Market Positioning
             >
               <a href="product-detail.html" class="product-grid-card">
                 <img
-                  src="./assets/img/body_splash/Peach_Coral.png"
+                  src="{{ asset('static/assets/img/body_splash/Peach_Coral.png') }}"
                   alt="Peach Coral product"
                 />
                 <div class="card-body">
@@ -452,7 +452,7 @@ Strategic Market Positioning
               data-aos-delay="150"
             >
               <a href="product-detail.html" class="product-grid-card">
-                <img src="./assets/img/new/Shadow.png" alt="Z Shadow product" />
+                <img src="{{ asset('static/assets/img/new/Shadow.png') }}" alt="Z Shadow product" />
                 <div class="card-body">
                   <span class="product-category">Battery</span>
                   <h4 class="h5 mb-2">Z Shadow</h4>

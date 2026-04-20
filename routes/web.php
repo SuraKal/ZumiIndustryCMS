@@ -6,15 +6,9 @@ use Livewire\Volt\Volt;
 
 Volt::route('/', 'public.landing')->name('home');
 Volt::route('/about', 'public.pages.about')->name('public.about');
-Volt::route('/our-coffee', 'public.pages.our-coffee')->name('public.our-coffee');
-Volt::route('/quality', 'public.pages.quality')->name('public.quality');
-Volt::route('/clients', 'public.pages.clients')->name('public.clients');
 Volt::route('/contact', 'public.pages.contact')->name('public.contact');
-Volt::route('/services', 'public.pages.services')->name('public.services');
-Volt::route('/values', 'public.pages.values')->name('public.values');
-Volt::route('/projects', 'public.pages.projects')->name('public.projects');
-Volt::route('/products', 'public.pages.products')->name('public.products');
-Volt::route('/gallery', 'public.pages.gallery.main')->name('public.galleries');
+Volt::route('/products', 'public.pages.contact')->name('public.contact');
+
 
 
 Volt::route('/blog', 'public.pages.blogs')->name('public.blogs');

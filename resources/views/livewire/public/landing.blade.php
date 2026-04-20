@@ -92,47 +92,7 @@ new #[Layout('components.layouts.guest')] class extends Component
         </div>
       </section>
 
-      <section
-        id="mission-vision"
-        class="section-padding"
-        style="background: #111"
-      >
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-lg-8 text-center" data-aos="fade-up">
-              <h2 class="display-4 fw-bold mb-4">Mission & Vision</h2>
-              <p class="lead text-gray">
-                Guiding our journey towards sustainable innovation and
-                leadership in clean energy.
-              </p>
-            </div>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-6" data-aos="fade-right">
-              <div class="glow-card">
-                <i class="bi bi-signpost large-icon"></i>
-                <h4 class="mb-3">Mission</h4>
-                <p class="text-gray">
-                  To produce high-quality, reliable, and long-lasting dry cell
-                  batteries; to enhance user comfort; to improve living
-                  standards; and to ensure sustainable company growth through
-                  profitable and efficient operations.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <div class="glow-card">
-                <i class="bi bi-eye large-icon"></i>
-                <h4 class="mb-3">Vision</h4>
-                <p class="text-gray">
-                  To become Africa’s preferred clean energy provider by 2035
-                  through the production of world-class dry cell batteries.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      @livewire('public.sections.mission_vision')
 
       <section id="products" class="section-padding" style="background: #111">
         <div class="container">
@@ -165,7 +125,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/deodrant_spary/Aura.png"
+                    src="{{ asset('static/assets/img/deodrant_spary/Aura.png') }}"
                     alt="Aura Deodorant"
                     class="rounded"
                   />
@@ -185,7 +145,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/deodrant_spary/Vanilla.png"
+                    src="{{ asset('static/assets/img/deodrant_spary/Vanilla.png') }}"
                     alt="Vanilla Deodorant"
                     class="rounded"
                   />
@@ -207,7 +167,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/deodrant_spary/Rosea.png"
+                    src="{{ asset('static/assets/img/deodrant_spary/Rosea.png') }}"
                     alt="Rosea Deodorant"
                     class="rounded"
                   />
@@ -227,7 +187,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/deodrant_spary/Pure.png"
+                    src="{{ asset('static/assets/img/deodrant_spary/Pure.png') }}"
                     alt="Pure Deodorant"
                     class="rounded"
                   />
@@ -247,7 +207,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/deodrant_spary/Pinkie.png"
+                    src="{{ asset('static/assets/img/deodrant_spary/Pinkie.png') }}"
                     alt="Pinkie Deodorant"
                     class="rounded"
                   />
@@ -267,7 +227,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/night_allure.png"
+                    src="{{ asset('static/assets/img/body_splash/night_allure.png') }}"
                     alt="ASK Night Allure"
                     class="rounded"
                   />
@@ -288,7 +248,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Pink_Crush.png"
+                    src="{{ asset('static/assets/img/body_splash/Pink_Crush.png') }}"
                     alt="Pink Crush Body Splash"
                     class="rounded"
                   />
@@ -308,7 +268,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Blush_Charm.png"
+                    src="{{ asset('static/assets/img/body_splash/Blush_Charm.png') }}"
                     alt="Blush Charm Body Splash"
                     class="rounded"
                   />
@@ -328,7 +288,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Rose_Embrace.png"
+                    src="{{ asset('static/assets/img/body_splash/Rose_Embrace.png') }}"
                     alt="Rose Embrace Body Splash"
                     class="rounded"
                   />
@@ -350,7 +310,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Sweat_Cream.png"
+                    src="{{ asset('static/assets/img/body_splash/Sweat_Cream.png') }}"
                     alt="Sweat Cream Body Splash"
                     class="rounded"
                   />
@@ -372,7 +332,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Midnight_Aura.png"
+                    src="{{ asset('static/assets/img/body_splash/Midnight_Aura.png') }}"
                     alt="Midnight Aura Body Splash"
                     class="rounded"
                   />
@@ -394,7 +354,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Coconut_Desire.png"
+                    src="{{ asset('static/assets/img/body_splash/Coconut_Desire.png') }}"
                     alt="Coconut Desire Body Splash"
                     class="rounded"
                   />
@@ -416,7 +376,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Forever_Bloom.png"
+                    src="{{ asset('static/assets/img/body_splash/Forever_Bloom.png') }}"
                     alt="Forever Bloom Body Splash"
                     class="rounded"
                   />
@@ -438,7 +398,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/The_One_Rose.png"
+                    src="{{ asset('static/assets/img/body_splash/The_One_Rose.png') }}"
                     alt="The One Rose Body Splash"
                     class="rounded"
                   />
@@ -460,7 +420,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Petal_Silk.png"
+                    src="{{ asset('static/assets/img/body_splash/Petal_Silk.png') }}"
                     alt="Petal Silk Body Splash"
                     class="rounded"
                   />
@@ -482,7 +442,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Golden_Wish.png"
+                    src="{{ asset('static/assets/img/body_splash/Golden_Wish.png') }}"
                     alt="Golden Wish Body Splash"
                     class="rounded"
                   />
@@ -504,7 +464,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Stellar_Glow.png"
+                    src="{{ asset('static/assets/img/body_splash/Stellar_Glow.png') }}"
                     alt="Stellar Glow Body Splash"
                     class="rounded"
                   />
@@ -526,7 +486,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Aqua_Breeze.png"
+                    src="{{ asset('static/assets/img/body_splash/Aqua_Breeze.png') }}"
                     alt="Aqua Breeze Body Splash"
                     class="rounded"
                   />
@@ -548,7 +508,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Nude_Vanilla.png"
+                    src="{{ asset('static/assets/img/body_splash/Nude_Vanilla.png') }}"
                     alt="Nude Vanilla Body Splash"
                     class="rounded"
                   />
@@ -570,7 +530,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/body_splash/Peach_Coral.png"
+                    src="{{ asset('static/assets/img/body_splash/Peach_Coral.png') }}"
                     alt="Peach Coral Body Splash"
                     class="rounded"
                   />
@@ -593,7 +553,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                   class="product-slide product-link"
                 >
                   <img
-                    src="./assets/img/new/Shadow.png"
+                    src="{{ asset('static/assets/img/new/Shadow.png') }}"
                     alt="Z Shadow Battery"
                     class="rounded"
                   />

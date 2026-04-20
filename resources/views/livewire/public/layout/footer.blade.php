@@ -72,7 +72,7 @@ new class extends Component {
     <div class="container">
     <a class="navbar-brand logo" href="#hero">
         <img
-        src="./assets/img/new/logo.png"
+        src="{{ asset('static/assets/img/new/logo.png') }}"
         height="80"
         alt="ZUMI INDUSTRY PLC Logo"
         />

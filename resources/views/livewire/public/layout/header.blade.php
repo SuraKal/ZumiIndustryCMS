@@ -11,7 +11,7 @@ new class extends Component {
 <nav class="navbar navbar-expand-lg fixed-top py-3">
     <div class="container">
         <a class="navbar-brand logo" href="#hero">
-            <img src="./assets/img/new/logo.png" height="80" alt="ZUMI INDUSTRY PLC Logo" />
+            <img src="{{ asset('static/assets/img/new/logo.png') }}" height="80" alt="ZUMI INDUSTRY PLC Logo" />
             <!-- style="filter: brightness(0) invert(1)" -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

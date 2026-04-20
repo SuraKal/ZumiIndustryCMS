@@ -83,7 +83,7 @@ new class extends Component {
                                     <i class="bi bi-star-fill"></i>
                                 </div>
                                 <div class="profile-info">
-                                    <img src="{{ $testimonial?->first_image_path ?? 'static/assets/img/user-avatar.jpg' }}"
+                                    <img src="{{ $testimonial?->first_image_path ?: asset('static/assets/img/user-avatar.jpg') }}"
                                         alt="{{ $testimonial?->author_name }} avatar" />
                                     <div>
                                         <h3>{{ $testimonial?->author_name }}</h3>

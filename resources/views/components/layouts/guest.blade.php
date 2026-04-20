@@ -14,17 +14,17 @@
     <meta name="keywords"
         content="Dry cell batteries, ZUMI INDUSTRY PLC, Ethiopia manufacturing, clean energy, R6 batteries, R03 batteries, industrial energy" />
 
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/new/favicon/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/new/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('static/assets/img/new/favicon/favicon-16x16.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('static/assets/img/new/favicon/favicon-32x32.png') }}" />
 
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/new/favicon/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/new/favicon/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('static/assets/img/new/favicon/android-chrome-192x192.png') }}" />
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('static/assets/img/new/favicon/android-chrome-512x512.png') }}" />
 
-    <link rel="apple-touch-icon" href="assets/img/new/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="{{ asset('static/assets/img/new/favicon/apple-touch-icon.png') }}" />
 
-    <link rel="manifest" href="assets/img/new/favicon/site.webmanifest" />
+    <link rel="manifest" href="{{ asset('static/assets/img/new/favicon/site.webmanifest') }}" />
 
-    <link rel="shortcut icon" href="assets/img/new/favicon/favicon.ico" />
+    <link rel="shortcut icon" href="{{ asset('static/assets/img/new/favicon/favicon.ico') }}" />
 
     <meta name="msapplication-TileColor" content="#EDD624" />
     <meta name="theme-color" content="#ffffff" />
@@ -32,13 +32,13 @@
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap"
         rel="stylesheet" />
 
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="{{ asset('static/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('static/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />
+    <link href="{{ asset('static/assets/vendor/aos/aos.css') }}" rel="stylesheet" />
+    <link href="{{ asset('static/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/additional.css" />
+    <link rel="stylesheet" href="{{ asset('static/assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('static/assets/css/additional.css') }}" />
 
 </head>
 
@@ -54,9 +54,9 @@
 
     @livewire('public.layout.footer')
 
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ asset('static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('static/assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('static/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
     <script>
         // Initialize Animations

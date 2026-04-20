@@ -22,26 +22,26 @@ new #[Layout('components.layouts.guest')] class extends Component
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="product-shell">
                         <div class="product-main-media mb-4">
-                            <img id="productMainImage" src="./assets/img/new/Shadow.png"
+                            <img id="productMainImage" src="{{ asset('static/assets/img/new/Shadow.png') }}"
                                 alt="Z Shadow dry cell battery pack" />
                         </div>
 
                         <div class="product-thumb-grid">
-                            <button type="button" class="product-thumb active" data-image="./assets/img/new/Shadow.png"
+                            <button type="button" class="product-thumb active" data-image="{{ asset('static/assets/img/new/Shadow.png') }}"
                                 data-alt="Z Shadow dry cell battery pack">
-                                <img src="./assets/img/new/Shadow.png" alt="Z Shadow pack thumbnail" />
+                                <img src="{{ asset('static/assets/img/new/Shadow.png') }}" alt="Z Shadow pack thumbnail" />
                             </button>
-                            <button type="button" class="product-thumb" data-image="./assets/img/main/hero_image.jpg"
+                            <button type="button" class="product-thumb" data-image="{{ asset('static/assets/img/main/hero_image.jpg') }}"
                                 data-alt="Factory energy product showcase">
-                                <img src="./assets/img/main/hero_image.jpg" alt="Factory showcase thumbnail" />
+                                <img src="{{ asset('static/assets/img/main/hero_image.jpg') }}" alt="Factory showcase thumbnail" />
                             </button>
-                            <button type="button" class="product-thumb" data-image="./assets/img/main/photo_24.jpg"
+                            <button type="button" class="product-thumb" data-image="{{ asset('static/assets/img/main/photo_24.jpg') }}"
                                 data-alt="Battery production detail view">
-                                <img src="./assets/img/main/photo_24.jpg" alt="Production detail thumbnail" />
+                                <img src="{{ asset('static/assets/img/main/photo_24.jpg') }}" alt="Production detail thumbnail" />
                             </button>
-                            <button type="button" class="product-thumb" data-image="./assets/img/main/photo_33.jpg"
+                            <button type="button" class="product-thumb" data-image="{{ asset('static/assets/img/main/photo_33.jpg') }}"
                                 data-alt="ZUMI production and packaging view">
-                                <img src="./assets/img/main/photo_33.jpg" alt="Packaging view thumbnail" />
+                                <img src="{{ asset('static/assets/img/main/photo_33.jpg') }}" alt="Packaging view thumbnail" />
                             </button>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ new #[Layout('components.layouts.guest')] class extends Component
             <div class="row g-4">
                 <div class="col-md-4" data-aos="fade-up">
                     <div class="gallery-card">
-                        <img src="./assets/img/main/hero_image.jpg" alt="ZUMI factory product presentation" />
+                        <img src="{{ asset('static/assets/img/main/hero_image.jpg') }}" alt="ZUMI factory product presentation" />
                         <div class="card-body">
                             <h4 class="mb-3">Shelf Presence</h4>
                             <p class="text-gray mb-0">
@@ -134,7 +134,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="gallery-card">
-                        <img src="./assets/img/main/photo_24.jpg" alt="Battery production line detail" />
+                        <img src="{{ asset('static/assets/img/main/photo_24.jpg') }}" alt="Battery production line detail" />
                         <div class="card-body">
                             <h4 class="mb-3">Production Detail</h4>
                             <p class="text-gray mb-0">
@@ -146,7 +146,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="gallery-card">
-                        <img src="./assets/img/main/photo_33.jpg" alt="Packaging and presentation image" />
+                        <img src="{{ asset('static/assets/img/main/photo_33.jpg') }}" alt="Packaging and presentation image" />
                         <div class="card-body">
                             <h4 class="mb-3">Brand Presentation</h4>
                             <p class="text-gray mb-0">
@@ -177,7 +177,7 @@ new #[Layout('components.layouts.guest')] class extends Component
             <div class="row g-4">
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up">
                     <a href="product-detail.html" class="similar-card">
-                        <img src="./assets/img/deodrant_spary/Aura.png" alt="Aura product" />
+                        <img src="{{ asset('static/assets/img/deodrant_spary/Aura.png') }}" alt="Aura product" />
                         <div class="card-body">
                             <h4 class="h5 mb-2">Aura</h4>
                             <p class="text-gray mb-0">Fresh floral profile</p>
@@ -186,7 +186,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                     <a href="product-detail.html" class="similar-card">
-                        <img src="./assets/img/deodrant_spary/Pure.png" alt="Pure product" />
+                        <img src="{{ asset('static/assets/img/deodrant_spary/Pure.png') }}" alt="Pure product" />
                         <div class="card-body">
                             <h4 class="h5 mb-2">Pure</h4>
                             <p class="text-gray mb-0">Minimal and clean</p>
@@ -195,7 +195,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                     <a href="product-detail.html" class="similar-card">
-                        <img src="./assets/img/body_splash/Pink_Crush.png" alt="Pink Crush product" />
+                        <img src="{{ asset('static/assets/img/body_splash/Pink_Crush.png') }}" alt="Pink Crush product" />
                         <div class="card-body">
                             <h4 class="h5 mb-2">Pink Crush</h4>
                             <p class="text-gray mb-0">Berry and vanilla blend</p>
@@ -204,7 +204,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                     <a href="product-detail.html" class="similar-card">
-                        <img src="./assets/img/body_splash/Aqua_Breeze.png" alt="Aqua Breeze product" />
+                        <img src="{{ asset('static/assets/img/body_splash/Aqua_Breeze.png') }}" alt="Aqua Breeze product" />
                         <div class="card-body">
                             <h4 class="h5 mb-2">Aqua Breeze</h4>
                             <p class="text-gray mb-0">Ocean-inspired freshness</p>
