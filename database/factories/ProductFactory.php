@@ -19,6 +19,7 @@ class ProductFactory extends Factory
         return [
             'partner_id' => \App\Models\Partner::factory(),
             'name' => $this->faker->word(),
+            'overview' => $this->faker->optional()->sentence(),
             'description' => $this->faker->optional()->paragraph(),
         ];
     }
