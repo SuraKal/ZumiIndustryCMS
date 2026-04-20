@@ -1,115 +1,235 @@
 <?php
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
-use App\Models\Product;
 
 new #[Layout('components.layouts.guest')] class extends Component
 {
-    public $product;
-    public $name, $partner, $thumbnail, $description, $code, $gallery,$fullUrl;
-
-    public function mount(Product $product)
-    {
-        $this->product = $product;
-
-        if (!$product->is_visible) {
-            redirect()->route('public.products');
-        }
-
-        $this->name = $product?->name;
-        $this->partner = $product?->partner?->name;
-        $this->thumbnail = $product?->thumbnail;
-        $this->description = $product?->description;
-        $this->code = $product?->code;
-        $this->gallery = $product?->image_paths; // dynamically load gallery images
-        // Get the full URL including the query string
-        $this->fullUrl = request()->fullUrl();
-    }
-
-
-};
-?>
-
-
+    //
+}; ?>
 
 <main>
-    <div class="page-wrapper overflow-hidden">
-        <!--  Banner Section -->
-        <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
-            style="
-            background-image: url({{ asset('static/assets/images/backgrounds/home-backfall.jpg') }});
-        ">
-            <div class="container">
-                <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
-                    <div class="row align-items-center">
-                        <div class="col-xl-4">
-                            <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
-                                <img src="assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin" />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200"
-                        data-aos-duration="1000">
-                        <h1 class="mb-0 fs-16 text-white lh-1 text-truncate">
-                            {{ $name }}
-                        </h1>
-                        <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
-                            <span
-                                class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
-                                <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+    <section class="product-hero pb-5">
+        <div class="container">
+            <div class="breadcrumb-nav mb-4" data-aos="fade-up">
+                <a href="index.html">Home</a>
+                <span class="mx-2">/</span>
+                <a href="products.html">Products</a>
+                <span class="mx-2">/</span>
+                <span class="current">Z Shadow</span>
             </div>
-        </section>
 
-        <!--  Product Detail Section -->
-        <section class="product-detail py-5 py-lg-11 py-xl-12">
-            <div class="container">
-                <div class="d-flex flex-column gap-5 gap-xl-11">
-                    <div class="d-flex flex-column gap-8">
-                        <a href="{{ route('public.products') }}" class="btn py-2 ps-3 pe-5" data-aos="fade-up" data-aos-delay="100"
-                            data-aos-duration="1000">
-                            <span class="btn-text pe-1">Back</span>
-                            <iconify-icon icon="lucide:arrow-up-right"
-                                class="btn-icon bg-white text-dark round-36 rounded-circle hstack justify-content-center fs-5 shadow-sm">
-                            </iconify-icon>
-                        </a>
-                        <div class="d-md-flex align-items-center gap-4 gap-lg-8" data-aos="fade-up" data-aos-delay="200"
-                            data-aos-duration="1000">
-                            <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
-                                <p class="mb-0">Partner</p>
-                                <p class="mb-0 text-dark fs-5 fw-medium">
-                                    {{ $partner }}
-                                </p>
-                            </div>
-                            <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
-                                <p class="mb-0">Name</p>
-                                <p class="mb-0 text-dark fs-5 fw-medium">
-                                    {{ $name }}
-                                </p>
-                            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="product-shell">
+                        <div class="product-main-media mb-4">
+                            <img id="productMainImage" src="./assets/img/new/Shadow.png"
+                                alt="Z Shadow dry cell battery pack" />
+                        </div>
+
+                        <div class="product-thumb-grid">
+                            <button type="button" class="product-thumb active" data-image="./assets/img/new/Shadow.png"
+                                data-alt="Z Shadow dry cell battery pack">
+                                <img src="./assets/img/new/Shadow.png" alt="Z Shadow pack thumbnail" />
+                            </button>
+                            <button type="button" class="product-thumb" data-image="./assets/img/main/hero_image.jpg"
+                                data-alt="Factory energy product showcase">
+                                <img src="./assets/img/main/hero_image.jpg" alt="Factory showcase thumbnail" />
+                            </button>
+                            <button type="button" class="product-thumb" data-image="./assets/img/main/photo_24.jpg"
+                                data-alt="Battery production detail view">
+                                <img src="./assets/img/main/photo_24.jpg" alt="Production detail thumbnail" />
+                            </button>
+                            <button type="button" class="product-thumb" data-image="./assets/img/main/photo_33.jpg"
+                                data-alt="ZUMI production and packaging view">
+                                <img src="./assets/img/main/photo_33.jpg" alt="Packaging view thumbnail" />
+                            </button>
                         </div>
                     </div>
-                    <div class="row gap-4 gap-lg-0">
-                        <div class="col-lg-4">
-                            <h2 class="fs-13 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-                                Description
-                            </h2>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="eyebrow d-inline-block mb-3">Flagship Product</span>
+                    <h1 class="hero-title detail-title">Z Shadow</h1>
+                    <p class="detail-copy">
+                        Z Shadow is a dependable dry cell battery designed to deliver
+                        steady power for everyday household electronics, portable
+                        devices, and essential consumer applications. It represents
+                        ZUMI INDUSTRY PLC’s focus on practical performance, consistent
+                        quality, and trusted energy solutions for the local market.
+                    </p>
+
+                    <div class="detail-points">
+                        <div class="detail-point">
+                            <span>Category</span>
+                            <strong>Alkaline Dry Cell Battery</strong>
                         </div>
-                        <div class="col-lg-8">
-                            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                                <p class="fs-5 mb-6">
-                                    {!! $description !!}
-                                </p>
-                            </div>
+                        <div class="detail-point">
+                            <span>Formats</span>
+                            <strong>AA / AAA</strong>
+                        </div>
+                        <div class="detail-point">
+                            <span>Voltage</span>
+                            <strong>1.5V Output</strong>
+                        </div>
+                        <div class="detail-point">
+                            <span>Pack Style</span>
+                            <strong>Retail Ready 4-Pack</strong>
+                        </div>
+                    </div>
+
+                    <ul class="spec-list mb-4">
+                        <li>
+                            <i class="bi bi-check2-circle"></i>
+                            <span>Built for daily-use electronics, household devices, and
+                                portable accessories.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check2-circle"></i>
+                            <span>Engineered to support reliable everyday use with stable
+                                performance across common battery-powered devices.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check2-circle"></i>
+                            <span>Packaged for strong shelf presence and convenient retail
+                                display in consumer-focused markets.</span>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="contact.html" class="accent-btn">Request Quote</a>
+                        <a href="products.html" class="btn btn-outline-light rounded-5 px-4 py-3">
+                            Back to Products
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: #111">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <span class="eyebrow d-inline-block mb-3">Gallery</span>
+                    <h2 class="display-5 fw-bold mb-4">Product Highlights</h2>
+                    <p class="lead text-gray">
+                        See how Z Shadow is presented through product, packaging, and
+                        production visuals that reinforce quality and brand trust.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="gallery-card">
+                        <img src="./assets/img/main/hero_image.jpg" alt="ZUMI factory product presentation" />
+                        <div class="card-body">
+                            <h4 class="mb-3">Shelf Presence</h4>
+                            <p class="text-gray mb-0">
+                                A strong retail presentation that helps the product stand
+                                out clearly on shelves and in promotional materials.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-card">
+                        <img src="./assets/img/main/photo_24.jpg" alt="Battery production line detail" />
+                        <div class="card-body">
+                            <h4 class="mb-3">Production Detail</h4>
+                            <p class="text-gray mb-0">
+                                A closer look at the production environment behind ZUMI’s
+                                commitment to dependable battery quality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-card">
+                        <img src="./assets/img/main/photo_33.jpg" alt="Packaging and presentation image" />
+                        <div class="card-body">
+                            <h4 class="mb-3">Brand Presentation</h4>
+                            <p class="text-gray mb-0">
+                                Packaging and brand presentation designed to communicate
+                                reliability, performance, and customer confidence.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-custom text-white">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <span class="eyebrow d-inline-block mb-3">You May Also Like</span>
+                    <h2 class="display-5 fw-bold mb-4">Similar Products</h2>
+                    <p class="lead text-gray">
+                        Discover more products from ZUMI INDUSTRY PLC that serve
+                        personal care and daily consumer needs across multiple
+                        categories.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                    <a href="product-detail.html" class="similar-card">
+                        <img src="./assets/img/deodrant_spary/Aura.png" alt="Aura product" />
+                        <div class="card-body">
+                            <h4 class="h5 mb-2">Aura</h4>
+                            <p class="text-gray mb-0">Fresh floral profile</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="product-detail.html" class="similar-card">
+                        <img src="./assets/img/deodrant_spary/Pure.png" alt="Pure product" />
+                        <div class="card-body">
+                            <h4 class="h5 mb-2">Pure</h4>
+                            <p class="text-gray mb-0">Minimal and clean</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="product-detail.html" class="similar-card">
+                        <img src="./assets/img/body_splash/Pink_Crush.png" alt="Pink Crush product" />
+                        <div class="card-body">
+                            <h4 class="h5 mb-2">Pink Crush</h4>
+                            <p class="text-gray mb-0">Berry and vanilla blend</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <a href="product-detail.html" class="similar-card">
+                        <img src="./assets/img/body_splash/Aqua_Breeze.png" alt="Aqua Breeze product" />
+                        <div class="card-body">
+                            <h4 class="h5 mb-2">Aqua Breeze</h4>
+                            <p class="text-gray mb-0">Ocean-inspired freshness</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: #000">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4">
+                        Need Bulk Supply Information?
+                    </h2>
+                    <p class="text-gray mb-5">
+                        Contact our team for wholesale inquiries, distribution
+                        partnerships, or more information about Z Shadow and other
+                        ZUMI products.
+                    </p>
+                    <a href="contact.html" class="accent-btn">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>

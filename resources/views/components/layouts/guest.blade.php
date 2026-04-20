@@ -1,137 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Amen Trading PLC</title>
-    {{-- Generate the favicons and some meta tag with description only --}}
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ZUMI INDUSTRY PLC | Next-Gen Energy</title>
+    <title>
+        ZUMI INDUSTRY PLC – Ethiopia’s Premier Dry Cell Battery Manufacturer
+    </title>
+
     <meta name="description"
-        content="The Amen Trading PLC is a growing and reliable provider of electrical and electro-mechanical solutions with over eight years of experience in Ethiopia. We focus on safety, innovation, and quality craftsmanship for dependable engineering services." />
+        content="ZUMI INDUSTRY PLC is the first and only factory in Ethiopia engaged in the production of high-quality dry cell batteries. Established in 2023 in Akaki Kality." />
+    <meta name="keywords"
+        content="Dry cell batteries, ZUMI INDUSTRY PLC, Ethiopia manufacturing, clean energy, R6 batteries, R03 batteries, industrial energy" />
 
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/new/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/new/favicon/favicon-32x32.png" />
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('static/assets/images/favicon/apple-touch-icon.png') }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('static/assets/images/favicon/favicon-32x32.png') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('static/assets/images/favicon/favicon-16x16.png') }}" />
-    <link rel="manifest" href="{{ asset('static/assets/images/favicon/site.html') }}" />
-    <link rel="mask-icon" href="{{ asset('static/assets/images/favicon/safari-pinned-tab.svg') }}" color="#666666" />
-    <link rel="shortcut icon" href="{{ asset('static/assets/images/favicon/favicon.ico') }}" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/new/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/new/favicon/android-chrome-512x512.png" />
 
-    <link rel="stylesheet" href="{{ asset('static/assets/libs/owl.carousel/dist/assets/owl.carousel.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('static/assets/libs/aos-master/dist/aos.css') }}" />
-    <link rel="stylesheet" href="{{ asset('static/assets/css/styles.css') }}" />
+    <link rel="apple-touch-icon" href="assets/img/new/favicon/apple-touch-icon.png" />
 
-    <style>
-    html, body {
-    overflow-x: hidden;
-}
-        .gallery-img {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            max-height: 50vh;
-            object-fit: cover;
-        }
+    <link rel="manifest" href="assets/img/new/favicon/site.webmanifest" />
 
-        .gallery-img:hover {
-            transform: scale(1.05);
-        }
+    <link rel="shortcut icon" href="assets/img/new/favicon/favicon.ico" />
 
-        /* Modal auto-size to image */
-        .modal-auto-size {
-            max-width: none;
-            width: auto;
-        }
+    <meta name="msapplication-TileColor" content="#EDD624" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet" />
 
-        .modal-content {
-            display: inline-block;
-            background: transparent;
-            position: relative;
-            /* Needed for positioning close icon */
-        }
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-        .modal-img {
-            max-width: 90vw;
-            max-height: 90vh;
-            width: auto;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        /* Close icon styling */
-        .modal-close-btn {
-            position: absolute;
-            top: -20px; /* slightly above image */
-            left: 50%;
-            z-index: 10;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-
-        .modal-close-btn:hover {
-            background: rgba(0, 0, 0, 0.85);
-        }
-
-        /* Icon size inside close button */
-        .modal-close-btn .big-icon {
-            width: 24px;
-            height: 24px;
-            color: #fff;
-            padding: 3px 4px;
-        }
-
-        .modal-body img {
-            width: 40%;
-            height: auto;
-        }
-
-        .line-clamp-3 {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/additional.css" />
 
 </head>
 
 <body>
-    <!-- Header -->
-    <livewire:public.layout.header />
-    <main>
-        {{ $slot }}
-    </main>
-    <livewire:public.layout.footer />
-    <script src="{{ asset('static/assets/libs/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ asset('static/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('static/assets/libs/owl.carousel/dist/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('static/assets/libs/aos-master/dist/aos.js') }}"></script>
-    <script src="{{ asset('static/assets/js/custom.js') }}"></script>
-    <!-- solar icons -->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <i class="bi bi-lightning-charge floating-icon" style="top: 15%; right: 10%"></i>
+    <i class="bi bi-cpu floating-icon" style="bottom: 10%; left: 5%; animation-delay: 2s"></i>
+    <i class="bi bi-plug floating-icon" style="top: 40%; left: 15%; font-size: 2rem; animation-delay: 4s"></i>
+
+
+    @livewire('public.layout.header')
+
+    {{ $slot }}
+
+    @livewire('public.layout.footer')
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        // Modal for image preview
-        document.addEventListener('DOMContentLoaded', function () {
-            const galleryImgs = document.querySelectorAll('.gallery-img');
-            const modal = document.getElementById('imageModal');
-            const modalImg = modal.querySelector('.modal-img');
+        // Initialize Animations
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
 
-            galleryImgs.forEach(img => {
-                img.addEventListener('click', function () {
-                    const imageSrc = this.getAttribute('data-image');
-                    modalImg.src = imageSrc;
-                });
+        // Initialize Product Slider
+        new Swiper(".product-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 4
+                },
+            },
+            autoplay: {
+                delay: 3000
+            },
+        });
+
+        // Ensure dropdown works on mobile
+        document.addEventListener("DOMContentLoaded", function () {
+            var toggler = document.querySelector(".navbar-toggler");
+            var collapse = new bootstrap.Collapse(
+                document.getElementById("navbarNav"), {
+                    toggle: false,
+                },
+            );
+            toggler.addEventListener("click", function () {
+                collapse.toggle();
             });
         });
 
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggler = document.querySelector(".navbar-toggler");
+
+        if (!toggler) {
+          return;
+        }
+
+        const collapse = new bootstrap.Collapse(
+          document.getElementById("navbarNav"),
+          {
+            toggle: false,
+          },
+        );
+
+        toggler.addEventListener("click", function () {
+          collapse.toggle();
+        });
+      });
+
+      const filterButtons = document.querySelectorAll(".filter-chip");
+      const productItems = document.querySelectorAll(".product-item");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+
+          filterButtons.forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+
+          productItems.forEach((product) => {
+            const matches =
+              filter === "all" || product.dataset.category === filter;
+
+            product.classList.toggle("is-hidden", !matches);
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggler = document.querySelector(".navbar-toggler");
+
+        if (!toggler) {
+          return;
+        }
+
+        const collapse = new bootstrap.Collapse(
+          document.getElementById("navbarNav"),
+          {
+            toggle: false,
+          },
+        );
+
+        toggler.addEventListener("click", function () {
+          collapse.toggle();
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggler = document.querySelector(".navbar-toggler");
+        const contactForm = document.getElementById("contactInquiryForm");
+
+        if (!toggler) {
+          if (contactForm) {
+            contactForm.addEventListener("submit", function (event) {
+              event.preventDefault();
+            });
+          }
+
+          return;
+        }
+
+        const collapse = new bootstrap.Collapse(
+          document.getElementById("navbarNav"),
+          {
+            toggle: false,
+          },
+        );
+
+        toggler.addEventListener("click", function () {
+          collapse.toggle();
+        });
+
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+          });
+        }
+      });
     </script>
 </body>
 

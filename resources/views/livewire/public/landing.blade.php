@@ -7,1094 +7,845 @@ new #[Layout('components.layouts.guest')] class extends Component
     //
 }; ?>
 
-
-<main>
-    <!-- Page Wrapper -->
-    <div class="page-wrapper overflow-hidden">
-        <!-- Banner Section -->
-        <section class="banner-section position-relative d-flex align-items-end min-vh-100">
-            <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted loop playsinline
-                poster="{{ asset('static/assets/images/backgrounds/home-backfall.jpg') }}">
-                <source src="{{ asset('static/assets/images/backgrounds/banner-video-ori.mp4') }}" type="video/mp4" />
-                <img src="{{ asset('static/assets/images/backgrounds/home-backfall.jpg') }}" alt="Banner fallback image"
-                    class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" />
-            </video>
-            <div class="container">
-                <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
-                    <div class="row align-items-center">
-                        <div class="col-xl-4">
-                            <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
-                                <img src="{{ asset('static/assets/images/svgs/primary-leaf.svg') }}" alt=""
-                                    class="img-fluid animate-spin" />
-                                <p class="mb-0 text-white fs-5 text-opacity-70">
-                                    <!-- The Amen Trading PLC is a growing and reliable provider of electrical and electro-mechanical solutions with over eight years of experience in Ethiopia. We focus on safety, innovation, and quality craftsmanship for dependable engineering services. -->
-                                    WHERE EXPERTISE MEETS DEDICATION
-
-
-
-                                    <!-- <br>
-                    <b>WHERE EXPERTISE MEETS DEDICATION</b> -->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200"
-                        data-aos-duration="1000">
-                        <h1 class="mb-0 fs-16 text-white lh-1">The Amen Trading PLC</h1>
-                        <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
-                            <span
-                                class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
-                                <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Stats & Facts Section -->
-        <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
-            <div class="container">
-                <div class="row gap-7 gap-xl-0">
-                    <div class="col-xl-4 col-xxl-4">
-                        <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                            data-aos-duration="1000">
-                            <span
-                                class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">01</span>
-                            <hr class="border-line" />
-                            <span class="badge text-bg-dark">About Us</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-xxl-7">
-                        <div class="d-flex flex-column gap-9">
-                            <div class="row">
-                                <div class="col-xxl-8">
-                                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                                        data-aos-duration="1000">
-                                        <h2 class="mb-0">
-                                            We have built a reputation for delivering dependable engineering solutions
-                                            that combine safety, innovation, and quality craftsmanship.
-                                        </h2>
-                                        <p class="fs-5 mb-0">
-                                            The Amen Trading PLC is a growing and reliable provider of electrical and
-                                            electro-mechanical solutions with over eight years of experience in
-                                            Ethiopia. Formerly known as Belsty Ayana Electrical Engineering Works, our
-                                            company has grown from small electrical projects into a trusted partner for
-                                            hotels, hospitals, commercial buildings, industrial facilities, and
-                                            government institutions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
-                                    <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up"
-                                        data-aos-delay="200" data-aos-duration="1000">
-                                        <h2 class="mb-0 fs-14">
-                                            <span class="count" data-target="8">8</span>+
-                                        </h2>
-                                        <p class="mb-0">Years of proven experience</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
-                                    <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up"
-                                        data-aos-delay="300" data-aos-duration="1000">
-                                        <h2 class="mb-0 fs-14">
-                                            <span class="count" data-target="50">50</span>+
-                                        </h2>
-                                        <p class="mb-0">
-                                            Skilled engineers and certified technicians
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
-                                    <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up"
-                                        data-aos-delay="400" data-aos-duration="1000">
-                                        <h2 class="mb-0 fs-14">
-                                            <span class="count" data-target="100">100</span>+
-                                        </h2>
-                                        <p class="mb-0">Projects completed across industries</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ route('public.about') }}" class="btn" data-aos="fade-up" data-aos-delay="500"
-                                data-aos-duration="1000">
-                                <span class="btn-text">Who we are</span>
-                                <iconify-icon icon="lucide:arrow-up-right"
-                                    class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
-                                </iconify-icon>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="position-absolute bottom-0 start-0" data-aos="zoom-in" data-aos-delay="100"
-                data-aos-duration="1000">
-                <img src="{{ asset('static/assets/images/backgrounds/stats-facts-bg.svg') }}" alt="" class="img-fluid" />
-            </div>
-        </section>
-
-
-
-        <!-- Featured Projects Section -->
-
-
-<section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
-    <div class="d-flex flex-column gap-5 gap-xl-11">
-
-        <!-- Section Header -->
+    <main>
+      <section id="hero" class="hero-glow">
         <div class="container">
-            <div class="row gap-7 gap-xl-0">
-                <div class="col-xl-4">
-                    <div class="d-flex align-items-center gap-7 py-2"
-                         data-aos="fade-right"
-                         data-aos-delay="100"
-                         data-aos-duration="1000">
-                        <span
-                            class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">
-                            02
-                        </span>
-                        <hr class="border-line" />
-                        <span class="badge text-bg-dark">Industries We Serve</span>
-                    </div>
-                </div>
-                <div class="col-xl-8 col-xxl-7">
-                    <div class="d-flex flex-column gap-3"
-                         data-aos="fade-up"
-                         data-aos-delay="100"
-                         data-aos-duration="1000">
-                        <h2 class="mb-0">Industries We Serve</h2>
-                        <p class="fs-5 mb-0">
-                            We deliver specialized solutions across key sectors in Ethiopia.
-                        </p>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-lg-10" data-aos="fade-up">
+              <span
+                class="text-uppercase mb-3 d-block"
+                style="color: var(--brand-color); letter-spacing: 5px"
+                >Pioneering Since 2023</span
+              >
+              <h1 class="hero-title mb-4">
+                Pure Power.<br />Made In Ethiopia.
+              </h1>
+              <p class="lead text-gray mb-5 col-md-8">
+                The first and only domestic factory producing high-performance
+                dry cell batteries. Engineered with modern technology to
+                energize a nation.
+              </p>
+              <div class="d-flex gap-4">
+                <a href="products.html" class="accent-btn">Explore Products</a>
+                <a
+                  href="about.html"
+                  class="btn btn-outline-light rounded-5 px-4 d-flex align-items-center"
+                  >Our Story</a
+                >
+              </div>
             </div>
+          </div>
         </div>
+      </section>
 
-        <!-- Slider -->
-        <div class="featured-projects-slider px-3">
-            <div class="owl-carousel owl-theme">
-
-                <!-- Hotels -->
-                <div class="item">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
-                        <div class="bg-dark text-center px-4 py-5">
-                            <i class="fa fa-hotel fa-3x text-primary mb-3"></i>
-                            <h5 class="mb-0 text-white fw-semibold text-truncate">Hotels & Resorts</h5>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-3">
-                                <span class="badge border text-dark me-1">Electrical Installation</span>
-                                <span class="badge border text-dark">Security Systems</span>
-                            </div>
-                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
-                                Comprehensive power and surveillance for hospitality excellence.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hospitals -->
-                <div class="item">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
-                        <div class="bg-dark text-center px-4 py-5">
-                            <i class="fa fa-hospital fa-3x text-primary mb-3"></i>
-                            <h5 class="mb-0 text-white fw-semibold text-truncate">
-                                Hospitals & Healthcare Facilities
-                            </h5>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-3">
-                                <span class="badge border text-dark me-1">Generator Services</span>
-                                <span class="badge border text-dark">Fire Alarms</span>
-                            </div>
-                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
-                                Uninterrupted backup and safety for life-saving environments.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Government -->
-                <div class="item">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
-                        <div class="bg-dark text-center px-4 py-5">
-                            <i class="fa fa-university fa-3x text-primary mb-3"></i>
-                            <h5 class="mb-0 text-white fw-semibold text-truncate">
-                                Government Offices & Guest Houses
-                            </h5>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-3">
-                                <span class="badge border text-dark me-1">Communication Systems</span>
-                                <span class="badge border text-dark">Maintenance</span>
-                            </div>
-                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
-                                Robust networks and ongoing support for public sector efficiency.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Industrial -->
-                <div class="item">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
-                        <div class="bg-dark text-center px-4 py-5">
-                            <i class="fa fa-industry fa-3x text-primary mb-3"></i>
-                            <h5 class="mb-0 text-white fw-semibold text-truncate">
-                                Factories & Industrial Plants
-                            </h5>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-3">
-                                <span class="badge border text-dark me-1">Electro-Mechanical</span>
-                                <span class="badge border text-dark">Power Distribution</span>
-                            </div>
-                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
-                                Integrated systems for optimal industrial operations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Warehouses -->
-                <div class="item">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
-                        <div class="bg-dark text-center px-4 py-5">
-                            <i class="fa fa-bed fa-3x text-primary mb-3"></i>
-                            <h5 class="mb-0 text-white fw-semibold text-truncate">
-                                Warehouses & Logistics Centers
-                            </h5>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-3">
-                                <span class="badge border text-dark me-1">CCTV Systems</span>
-                                <span class="badge border text-dark">Access Control</span>
-                            </div>
-                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
-                                Secure monitoring for seamless supply chain management.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Residential -->
-                <div class="item">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="min-height: 340px;">
-                        <div class="bg-dark text-center px-4 py-5">
-                            <i class="fa fa-home fa-3x text-primary mb-3"></i>
-                            <h5 class="mb-0 text-white fw-semibold text-truncate">
-                                Residential Developments
-                            </h5>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-3">
-                                <span class="badge border text-dark me-1">Electrical Systems</span>
-                                <span class="badge border text-dark">Smart Wiring</span>
-                            </div>
-                            <p class="text-muted small line-clamp-3 mb-0 flex-grow-1">
-                                Reliable and future-proof installations for homes and communities.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+      <section id="about" class="section-padding bg-custom text-white">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+              <p class="lead text-gray">
+                ZUMI INDUSTRY PLC was established in 2023. It is the first and
+                only factory in Ethiopia engaged in the production of dry cell
+                batteries. Our company is located in Akaki Kality Sub-City,
+                where we manufacture high-quality products by utilizing modern
+                technology, advanced machinery, and well-equipped facilities. We
+                have also established high-standard laboratories to ensure
+                strict quality control. Furthermore, by implementing an
+                integrated quality control system that monitors production from
+                the initial stage through to the final product, ZUMI INDUSTRY
+                PLC consistently delivers superior and reliable dry cell
+                batteries.
+              </p>
             </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up">
+              <div class="glow-card">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Strategic Hub</h3>
+                <p class="text-gray">
+                  Located in Akaki Kality Sub-City, our facility utilizes
+                  advanced machinery and integrated quality control systems.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="glow-card">
+                <i class="bi bi-shield-check"></i>
+                <h3>Excellence</h3>
+                <p class="text-gray">
+                  Our high-standard laboratories ensure strict quality
+                  monitoring from initial stages to the final product.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="glow-card">
+                <i class="bi bi-graph-up"></i>
+                <h3>Vision 2035</h3>
+                <p class="text-gray">
+                  To become Africa’s preferred clean energy provider through
+                  world-class dry cell battery production.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-    </div>
-</section>
-
-        <!-- Services Section -->
-        <livewire:public.sections.services />
-
-        <!-- Why choose us Section -->
-        <section class="why-choose-us py-5 py-lg-11 py-xl-12" id="why-us">
-            <div class="container">
-                <div class="row justify-content-between gap-5 gap-xl-0">
-                    <div class="col-xl-3 col-xxl-3">
-                        <div class="d-flex flex-column gap-7">
-                            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                                data-aos-duration="1000">
-                                <span
-                                    class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">04</span>
-                                <hr class="border-line" />
-                                <span class="badge text-bg-dark">Why Choose Us</span>
-                            </div>
-                            <h2 class="mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-                                Why choose us
-                            </h2>
-                            <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                                Our team consists of certified engineers, technicians, and skilled professionals with
-                                diverse backgrounds in electro-mechanical engineering.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-xxl-8">
-                        <div class="row">
-                            <div class="col-lg-4 mb-7 mb-lg-0">
-                                <div class="card position-relative overflow-hidden bg-primary h-100" data-aos="fade-up"
-                                    data-aos-delay="100" data-aos-duration="1000">
-                                    <div class="card-body d-flex flex-column justify-content-between">
-                                        <div class="d-flex flex-column gap-3 position-relative z-1">
-                                            <ul class="list-unstyled mb-0 hstack gap-1">
-                                                <li>
-                                                    <a class="hstack" href="javascript:void(0)">
-                                                        <iconify-icon icon="solar:star-bold" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="hstack" href="javascript:void(0)">
-                                                        <iconify-icon icon="solar:star-bold" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="hstack" href="javascript:void(0)">
-                                                        <iconify-icon icon="solar:star-bold" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="hstack" href="javascript:void(0)">
-                                                        <iconify-icon icon="solar:star-bold" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="hstack" href="javascript:void(0)">
-                                                        <iconify-icon icon="solar:star-line-duotone"
-                                                            class="fs-6 text-dark"></iconify-icon>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <p class="mb-0 fs-6 text-dark">
-                                                Proven expertise with 8+ years of experience – We bring years of
-                                                hands-on knowledge and a track record of delivering successful projects
-                                                across different sectors.
-                                            </p>
-                                        </div>
-                                        <div class="position-relative z-1">
-                                            <div class="pb-6 border-bottom">
-                                                <h2 class="mb-0">100%</h2>
-                                                <p class="mb-0">Client Trust</p>
-                                            </div>
-                                            <div class="hstack gap-6 pt-6 d-none">
-                                                <img src="{{ asset('static/assets/images/profile/avatar-1.png') }}" alt=""
-                                                    class="img-fluid rounded-circle overflow-hidden flex-shrink-0"
-                                                    width="64" height="64" />
-                                                <div>
-                                                    <h5 class="mb-0">Client Testimonial</h5>
-                                                    <p class="mb-0">Industrial Facility</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="position-absolute bottom-0 end-0">
-                                            <img src="{{ asset('static/assets/images/backgrounds/customer-satisfaction-bg.svg') }}"
-                                                alt="" class="img-fluid" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-7 mb-lg-0">
-                                <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200"
-                                    data-aos-duration="1000">
-                                    <div class="card bg-dark position-relative">
-                                        <div class="card-body d-flex flex-column gap-7">
-                                            <div>
-                                                <!-- <h2 class="mb-0 text-white">50+</h2> -->
-                                                <div class="text-center">
-                                                    <img src="{{ asset('static/assets/images/logos/logo3.png') }}" alt=""
-                                                        class="img-fluid w-50 text-center" />
-                                                </div>
-                                                <p class="mb-0 text-white text-opacity-70">
-                                                    Comprehensive solutions for diverse industries – From healthcare and
-                                                    hospitality to industrial and commercial, our services are tailored
-                                                    to meet unique client needs.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card bg-dark">
-                                        <div class="card-body d-flex flex-column gap-7">
-                                            <div>
-                                                <h2 class="mb-0 text-white">50+</h2>
-                                                <p class="mb-0 text-white text-opacity-70">
-                                                    Reliable emergency support and maintenance – Our team is available
-                                                    to provide fast, dependable troubleshooting and repairs to minimize
-                                                    downtime.
-                                                </p>
-                                            </div>
-                                            <ul class="d-flex align-items-center mb-0">
-                                                <li>
-                                                    <a href="javascript:void(0)">
-                                                        <img src="{{ asset('static/assets/images/profile/user-1.jpg') }}" width="44"
-                                                            height="44"
-                                                            class="rounded-circle border border-2 border-dark"
-                                                            alt="user-1" />
-                                                    </a>
-                                                </li>
-                                                <li class="ms-n2">
-                                                    <a href="javascript:void(0)">
-                                                        <img src="{{ asset('static/assets/images/profile/user-2.jpg') }}" width="44"
-                                                            height="44"
-                                                            class="rounded-circle border border-2 border-dark"
-                                                            alt="user-2" />
-                                                    </a>
-                                                </li>
-                                                <li class="ms-n2">
-                                                    <a href="javascript:void(0)">
-                                                        <img src="{{ asset('static/assets/images/profile/user-3.jpg') }}" width="44"
-                                                            height="44"
-                                                            class="rounded-circle border border-2 border-dark"
-                                                            alt="user-3" />
-                                                    </a>
-                                                </li>
-                                                <li class="ms-n2">
-                                                    <a href="javascript:void(0)">
-                                                        <img src="{{ asset('static/assets/images/profile/user-4.jpg') }}" width="44"
-                                                            height="44"
-                                                            class="rounded-circle border border-2 border-dark"
-                                                            alt="user-4" />
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-7 mb-lg-0">
-                                <div class="card border h-100 position-relative overflow-hidden" data-aos="fade-up"
-                                    data-aos-delay="300" data-aos-duration="1000">
-                                    <span
-                                        class="border rounded-circle round-490 d-block position-absolute top-0 start-50 translate-middle"></span>
-                                    <div class="card-body d-flex flex-column justify-content-between">
-                                        <div>
-                                            <h2 class="mb-0">24/7</h2>
-                                            <p class="mb-0 text-dark">
-                                                Strong reputation built on trust, quality, and customer satisfaction –
-                                                Clients choose us for our consistent commitment to excellence and
-                                                transparent working relationships.
-                                            </p>
-                                        </div>
-                                        <div class="d-flex flex-column gap-3">
-                                            <!-- <a href="{{ route('home') }}" class="logo-dark">
-                        <img src="{{ asset('static/assets/images/logos/logo3.png') }}" alt="logo" class="img-fluid h-75">
-                      </a> -->
-                                            <p class="mb-0 fs-5 text-dark">
-                                                Dedicated team of skilled engineers and technicians – Our highly trained
-                                                professionals combine technical expertise with innovation to deliver
-                                                top-quality results.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="border rounded-circle round-490 d-block position-absolute top-100 start-50 translate-middle"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section
+        id="mission-vision"
+        class="section-padding"
+        style="background: #111"
+      >
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+              <h2 class="display-4 fw-bold mb-4">Mission & Vision</h2>
+              <p class="lead text-gray">
+                Guiding our journey towards sustainable innovation and
+                leadership in clean energy.
+              </p>
             </div>
-        </section>
-
-
-        <!-- mission and vision Section -->
-        <livewire:public.sections.mission_vision :sectionNumber="'05'" />
-
-
-        <section class="meet-our-team py-5 py-lg-11 py-xl-12 d-none">
-            <div class="container">
-                <div class="d-flex flex-column gap-5 gap-xl-11">
-                    <div class="row gap-7 gap-xl-0">
-                        <div class="col-xl-4 col-xxl-4">
-                            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                                data-aos-duration="1000">
-                                <span
-                                    class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">06</span>
-                                <hr class="border-line bg-white" />
-                                <span class="badge text-bg-dark">Our Team</span>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-xxl-7">
-                            <div class="row">
-                                <div class="col-xxl-8">
-                                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                                        data-aos-duration="1000">
-                                        <h2 class="mb-0">Meet our team</h2>
-                                        <p class="fs-5 mb-0 text-opacity-70">
-                                            Our skilled engineers and certified technicians are committed to delivering
-                                            complete solutions from design to maintenance.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-                            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
-                                <div class="meet-team-img position-relative overflow-hidden">
-                                    <img src="{{ asset('static/assets/images/team/team-img-1.jpg') }}" alt="team-img"
-                                        class="img-fluid w-100" />
-                                    <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
-                                        <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}"
-                                                        alt="twitter" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-be.svg') }}" alt="be" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}"
-                                                        alt="linkedin" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="meet-team-details">
-                                    <h4 class="mb-0">Ayana Belsty</h4>
-                                    <p class="mb-0">Lead Electrical Engineer</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-                            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="200"
-                                data-aos-duration="1000">
-                                <div class="meet-team-img position-relative overflow-hidden">
-                                    <img src="{{ asset('static/assets/images/team/team-img-2.jpg') }}" alt="team-img"
-                                        class="img-fluid w-100" />
-                                    <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
-                                        <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}"
-                                                        alt="twitter" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-be.svg') }}" alt="be" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}"
-                                                        alt="linkedin" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="meet-team-details">
-                                    <h4 class="mb-0">Tadesse Amen</h4>
-                                    <p class="mb-0">Senior Technician</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-                            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="300"
-                                data-aos-duration="1000">
-                                <div class="meet-team-img position-relative overflow-hidden">
-                                    <img src="{{ asset('static/assets/images/team/team-img-3.jpg') }}" alt="team-img"
-                                        class="img-fluid w-100" />
-                                    <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
-                                        <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}"
-                                                        alt="twitter" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-be.svg') }}" alt="be" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}"
-                                                        alt="linkedin" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="meet-team-details">
-                                    <h4 class="mb-0">Liya Mekonnen</h4>
-                                    <p class="mb-0">Project Manager</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-                            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="400"
-                                data-aos-duration="1000">
-                                <div class="meet-team-img position-relative overflow-hidden">
-                                    <img src="{{ asset('static/assets/images/team/team-img-4.jpg') }}" alt="team-img"
-                                        class="img-fluid w-100" />
-                                    <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
-                                        <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-twitter.svg') }}"
-                                                        alt="twitter" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-be.svg') }}" alt="be" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#!"
-                                                    class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                                                        src="{{ asset('static/assets/images/svgs/icon-linkedin.svg') }}"
-                                                        alt="linkedin" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="meet-team-details">
-                                    <h4 class="mb-0">Dawit Yohannes</h4>
-                                    <p class="mb-0">Maintenance Specialist</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="glow-card">
+                <i class="bi bi-signpost large-icon"></i>
+                <h4 class="mb-3">Mission</h4>
+                <p class="text-gray">
+                  To produce high-quality, reliable, and long-lasting dry cell
+                  batteries; to enhance user comfort; to improve living
+                  standards; and to ensure sustainable company growth through
+                  profitable and efficient operations.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- Pricing Section -->
-        <section class="pricing-section py-5 py-lg-11 py-xl-12 bg-light-gray d-none">
-            <div class="container">
-                <div class="d-flex flex-column gap-5 gap-xl-10">
-                    <div class="d-flex flex-column gap-5 gap-xl-11">
-                        <div class="row gap-7 gap-xl-0">
-                            <div class="col-xl-4 col-xxl-4">
-                                <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right"
-                                    data-aos-delay="100" data-aos-duration="1000">
-                                    <span
-                                        class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">07</span>
-                                    <hr class="border-line bg-white" />
-                                    <span class="badge text-bg-dark">Consultation</span>
-                                </div>
-                            </div>
-                            <div class="col-xl-8 col-xxl-7">
-                                <div class="row">
-                                    <div class="col-xxl-8">
-                                        <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                                            data-aos-duration="1000">
-                                            <h2 class="mb-0">Tailored Pricing</h2>
-                                            <p class="fs-5 mb-0 text-opacity-70">
-                                                Contact us for customized quotes based on your project's scope and
-                                                requirements.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
-                                <div class="card w-100" data-aos="fade-up" data-aos-delay="100"
-                                    data-aos-duration="1000">
-                                    <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
-                                        <div class="d-flex flex-column gap-6">
-                                            <h5 class="mb-0 fw-medium">Basic Installation</h5>
-                                            <div class="hstack gap-2">
-                                                <h3 class="mb-0">Custom</h3>
-                                                <p class="mb-0">Quote</p>
-                                            </div>
-                                            <p class="mb-0">
-                                                Ideal for small-scale electrical wiring and basic systems.
-                                            </p>
-                                        </div>
-                                        <div class="pt-8 border-top d-flex flex-column gap-6">
-                                            <h6 class="mb-0 fw-normal">What’s Included:</h6>
-                                            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">
-                                                        Wiring and lighting setup
-                                                    </h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">Power distribution</h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">Basic testing</h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">Safety compliance</h6>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a href="" class="btn w-100 justify-content-center">
-                                            <span class="btn-text">Get Quote</span>
-                                            <iconify-icon icon="lucide:arrow-up-right"
-                                                class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
-                                            </iconify-icon>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
-                                <div class="card w-100" data-aos="fade-up" data-aos-delay="200"
-                                    data-aos-duration="1000">
-                                    <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
-                                        <div class="d-flex flex-column gap-6">
-                                            <div class="hstack gap-3">
-                                                <h5 class="mb-0 fw-medium">
-                                                    Full System Integration
-                                                </h5>
-                                                <span class="badge text-bg-dark hstack gap-2">
-                                                    <iconify-icon icon="lucide:flame" class="fs-5"></iconify-icon>Most
-                                                    popular
-                                                </span>
-                                            </div>
-                                            <div class="hstack gap-2">
-                                                <h3 class="mb-0 text-opacity-50 text-dark">
-                                                    <del>Custom</del>
-                                                </h3>
-                                                <h3 class="mb-0">Custom</h3>
-                                                <p class="mb-0">Quote</p>
-                                            </div>
-                                            <p class="mb-0">
-                                                Perfect for comprehensive electro-mechanical projects.
-                                            </p>
-                                        </div>
-                                        <div class="pt-8 border-top d-flex flex-column gap-6">
-                                            <h6 class="mb-0 fw-normal">What’s Included:</h6>
-                                            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">Everything in Basic</h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">
-                                                        CCTV and security integration
-                                                    </h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">
-                                                        Generator and fire alarm systems
-                                                    </h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">
-                                                        Ongoing maintenance plan
-                                                    </h6>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a href="" class="btn w-100 justify-content-center">
-                                            <span class="btn-text">Get Quote</span>
-                                            <iconify-icon icon="lucide:arrow-up-right"
-                                                class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
-                                            </iconify-icon>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
-                                <div class="card w-100" data-aos="fade-up" data-aos-delay="300"
-                                    data-aos-duration="1000">
-                                    <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
-                                        <div class="d-flex flex-column gap-6">
-                                            <h5 class="mb-0 fw-medium">Enterprise Solutions</h5>
-                                            <div class="hstack gap-2">
-                                                <h3 class="mb-0">Custom</h3>
-                                                <p class="mb-0">Quote</p>
-                                            </div>
-                                            <p class="mb-0">
-                                                Best for large-scale industrial and government projects.
-                                            </p>
-                                        </div>
-                                        <div class="pt-8 border-top d-flex flex-column gap-6">
-                                            <h6 class="mb-0 fw-normal">What’s Included:</h6>
-                                            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">
-                                                        Everything in Full Integration
-                                                    </h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">
-                                                        Advanced communication networks
-                                                    </h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">
-                                                        Custom electro-mechanical design
-                                                    </h6>
-                                                </li>
-                                                <li class="hstack gap-3">
-                                                    <span
-                                                        class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center">
-                                                        <iconify-icon icon="lucide:check" class="fs-6 text-dark">
-                                                        </iconify-icon>
-                                                    </span>
-                                                    <h6 class="mb-0 fw-normal">
-                                                        Priority 24/7 emergency support
-                                                    </h6>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a href="" class="btn w-100 justify-content-center">
-                                            <span class="btn-text">Get Quote</span>
-                                            <iconify-icon icon="lucide:arrow-up-right"
-                                                class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
-                                            </iconify-icon>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column gap-8" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-duration="1000">
-                        <p class="fs-5 mb-0 text-center text-dark">
-                            Serving hotels & resorts, hospitals & healthcare facilities, government offices & guest
-                            houses, factories & industrial plants, warehouses & logistics centers, commercial buildings,
-                            and residential developments
-                        </p>
-                        <div class="marquee w-100 d-flex align-items-center overflow-hidden">
-                            <div class="marquee-content d-flex align-items-center gap-8">
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-1.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-2.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-3.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-4.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-5.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-1.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-2.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-3.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-4.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-5.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-1.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-2.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-3.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-4.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-5.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-1.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-2.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-3.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-4.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                                <div class="marquee-tag hstack justify-content-center">
-                                    <img src="{{ asset('static/assets/images/pricing/partners-5.svg') }}" alt="partners"
-                                        class="img-fluid" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+              <div class="glow-card">
+                <i class="bi bi-eye large-icon"></i>
+                <h4 class="mb-3">Vision</h4>
+                <p class="text-gray">
+                  To become Africa’s preferred clean energy provider by 2035
+                  through the production of world-class dry cell batteries.
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- FAQ Section -->
-        <livewire:public.sections.faq secNumber="06" />
-        <!--  Project Section -->
-
-
-        <section class="Recent-news bg-light-gray py-5 my-4">
-            <div class="container">
-                <div class="d-flex flex-column gap-5 gap-xl-11">
-                    <div class="row gap-7 gap-xl-0">
-                        <div class="col-xl-4 col-xxl-4">
-                            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                                data-aos-duration="1000">
-                                <span
-                                    class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">07</span>
-                                <hr class="border-line bg-white" />
-                                <span class="badge text-bg-dark">Resources</span>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-xxl-7">
-                            <div class="row">
-                                <div class="col-xxl-8">
-                                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                                        data-aos-duration="1000">
-                                        <h2 class="mb-0">Recent Projects</h2>
-                                        <p class="fs-5 mb-0 text-opacity-70">
-                                            Explore our latest installations and maintenance successes in electrical and
-                                            security systems.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <livewire:public.sections.projects />
-
-                    <div class="text-center">
-                        <a href="{{ route('public.projects') }}" class="btn" data-aos="fade-up" data-aos-delay="300"
-                            data-aos-duration="1000">
-                            <span class="btn-text">Explore more</span>
-                            <iconify-icon icon="lucide:arrow-up-right"
-                                class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm">
-                            </iconify-icon>
-                        </a>
-                    </div>
-                </div>
+      <section id="products" class="section-padding" style="background: #111">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+              <h2 class="display-4 fw-bold mb-4">The Lineup</h2>
+              <p class="lead text-gray">
+                Long-lasting energy for every application.
+              </p>
             </div>
-        </section>
+          </div>
 
-        <section class="Recent-news bg-light-gray py-5 ">
-            <div class="container">
-                <div class="d-flex flex-column gap-5 gap-xl-11">
-                    <div class="row gap-7 gap-xl-0">
-                        <div class="col-xl-4 col-xxl-4">
-                            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                                data-aos-duration="1000">
-                                <span
-                                    class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">08</span>
-                                <hr class="border-line bg-white" />
-                                <span class="badge text-bg-dark">Products with our partners</span>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-xxl-7">
-                            <div class="row">
-                                <div class="col-xxl-8">
-                                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                                        data-aos-duration="1000">
-                                        <h2 class="mb-0">Recent Products</h2>
-                                        <p class="fs-5 mb-0 text-opacity-70">
-                                            Discover our featured products from leading brands in electrical and security
-                                            solutions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="swiper product-swiper">
+            <div class="swiper-wrapper">
+              <style>
+                .product-slide img {
+                  border-radius: 25px !important;
+                  padding-bottom: 5px !important;
+                }
 
-                    <livewire:public.sections.products />
+                .product-link {
+                  display: flex;
+                  color: #000;
+                }
+              </style>
+              <!-- Deodorants -->
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/deodrant_spary/Aura.png"
+                    alt="Aura Deodorant"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">AURA</h4>
+                  <p class="text-muted small">Deodorant spray · fresh floral</p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >250ml · Long-lasting</span
+                  >
+                </a>
+              </div>
 
-                    
-                </div>
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/deodrant_spary/Vanilla.png"
+                    alt="Vanilla Deodorant"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">VANILLA</h4>
+                  <p class="text-muted small">
+                    Warm vanilla · subtle sweetness
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Alcohol-free</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/deodrant_spary/Rosea.png"
+                    alt="Rosea Deodorant"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">ROSEA</h4>
+                  <p class="text-muted small">Rose petal essence · elegant</p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >250ml · Moisturizing</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/deodrant_spary/Pure.png"
+                    alt="Pure Deodorant"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">PURE</h4>
+                  <p class="text-muted small">Unscented · hypoallergenic</p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >150ml · Sensitive Skin</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/deodrant_spary/Pinkie.png"
+                    alt="Pinkie Deodorant"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">PINKIE</h4>
+                  <p class="text-muted small">Fruity floral · playful</p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Shiny Finish</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/night_allure.png"
+                    alt="ASK Night Allure"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">ASK NIGHT ALLURE</h4>
+                  <p class="text-muted small">Musk & amber · evening wear</p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >100ml · Intense</span
+                  >
+                </a>
+              </div>
+
+              <!-- Body Splashes -->
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Pink_Crush.png"
+                    alt="Pink Crush Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">PINK CRUSH</h4>
+                  <p class="text-muted small">Berry & vanilla · fun</p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >250ml · Limited Edition</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Blush_Charm.png"
+                    alt="Blush Charm Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">BLUSH CHARM</h4>
+                  <p class="text-muted small">Soft floral notes · charming</p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Everyday Fresh</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Rose_Embrace.png"
+                    alt="Rose Embrace Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">ROSE EMBRACE</h4>
+                  <p class="text-muted small">
+                    Romantic rose-inspired fragrance · elegant
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Long-lasting</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Sweat_Cream.png"
+                    alt="Sweat Cream Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">SWEAT CREAM</h4>
+                  <p class="text-muted small">
+                    Creamy smooth aroma · comfort & freshness
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Everyday Use</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Midnight_Aura.png"
+                    alt="Midnight Aura Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">MIDNIGHT AURA</h4>
+                  <p class="text-muted small">
+                    Deep and captivating scent · confident evenings
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Evening Wear</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Coconut_Desire.png"
+                    alt="Coconut Desire Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">COCONUT DESIRE</h4>
+                  <p class="text-muted small">
+                    Tropical coconut fragrance · exotic freshness
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Refreshing</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Forever_Bloom.png"
+                    alt="Forever Bloom Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">FOREVER BLOOM</h4>
+                  <p class="text-muted small">
+                    Elegant floral harmony · long-lasting freshness
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Daily Wear</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/The_One_Rose.png"
+                    alt="The One Rose Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">THE ONE ROSE</h4>
+                  <p class="text-muted small">
+                    Signature rose scent · timeless beauty
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Special Edition</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Petal_Silk.png"
+                    alt="Petal Silk Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">PETAL SILK</h4>
+                  <p class="text-muted small">
+                    Soft and silky floral blend · delicate impression
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Everyday Fresh</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Golden_Wish.png"
+                    alt="Golden Wish Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">GOLDEN WISH</h4>
+                  <p class="text-muted small">
+                    Luxurious golden fragrance · radiant presence
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Premium</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Stellar_Glow.png"
+                    alt="Stellar Glow Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">STELLAR GLOW</h4>
+                  <p class="text-muted small">
+                    Bright and energetic scent · keeps you glowing
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Everyday Use</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Aqua_Breeze.png"
+                    alt="Aqua Breeze Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">AQUA BREEZE</h4>
+                  <p class="text-muted small">
+                    Fresh aquatic fragrance · inspired by ocean waves
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Refreshing</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Nude_Vanilla.png"
+                    alt="Nude Vanilla Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">NUDE VANILLA</h4>
+                  <p class="text-muted small">
+                    Warm vanilla essence · smooth and subtle freshness
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Daily Wear</span
+                  >
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/body_splash/Peach_Coral.png"
+                    alt="Peach Coral Body Splash"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">PEACH CORAL</h4>
+                  <p class="text-muted small">
+                    Juicy peach tones · vibrant freshness
+                  </p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >200ml · Everyday Use</span
+                  >
+                </a>
+              </div>
+
+              <!-- Battery for reference -->
+              <div class="swiper-slide">
+                <a
+                  href="product-detail.html"
+                  class="product-slide product-link"
+                >
+                  <img
+                    src="./assets/img/new/Shadow.png"
+                    alt="Z Shadow Battery"
+                    class="rounded"
+                  />
+                  <h4 class="fw-bold">Z SHADOW</h4>
+                  <p class="text-muted small">Alkaline battery · AA/AAA</p>
+                  <span
+                    class="badge rounded-pill"
+                    style="background: var(--brand-color); color: #000"
+                    >Long Life · 1.5V · 4-Pack</span
+                  >
+                </a>
+              </div>
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
 
+      <section id="services" class="section-padding bg-custom text-white">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+              <h2 class="display-4 fw-bold mb-4">Our Services</h2>
+              <p class="lead text-gray">
+                Delivering excellence in every aspect of production and quality
+                assurance.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+              <div class="glow-card text-center">
+                <i class="bi bi-factory large-icon"></i>
+                <h4 class="mb-4">Manufacturing of Dry Cell Batteries</h4>
+                <p class="text-gray lead">
+                  We specialize in the production of high-quality dry cell
+                  batteries, leveraging modern technology, advanced machinery,
+                  and rigorous quality control to deliver reliable energy
+                  solutions tailored to diverse needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </div>
-</main>
+      <section id="roadmap" class="section-padding" style="background: #111">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+              <h2 class="display-4 fw-bold mb-4">Strategic Roadmap</h2>
+              <p class="lead text-gray">
+                To achieve clearly defined short-term and long-term objectives
+                that support sustainable growth, innovation, and market
+                leadership.
+              </p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right">
+              <div
+                class="glow-card"
+                style="background: linear-gradient(145deg, #141414, #000)"
+              >
+                <h4 class="mb-4" style="color: var(--brand-color)">
+                  Short-Term (1-3 Years)
+                </h4>
+                <ul class="list-unstyled text-gray">
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Increase domestic production capacity
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Advanced laboratory testing expansion
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Expand market in major Ethiopian cities
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Targeted marketing & brand awareness
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Develop employee training programs to improve skills in
+                    modern manufacturing and technology
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Begin adopting environmentally friendly practices in
+                    production and packaging
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+              <div
+                class="glow-card"
+                style="background: linear-gradient(145deg, #141414, #000)"
+              >
+                <h4 class="mb-4" style="color: var(--brand-color)">
+                  Long-Term (3-10 Years)
+                </h4>
+                <ul class="list-unstyled text-gray">
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Lead East African energy markets
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >R&D for next-gen battery tech
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Global export & international standards
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Full integration of eco-friendly practices
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Fully integrate sustainable production practices and
+                    support local communities
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Achieve sustainable profitability while maintaining
+                    competitive pricing and high product quality
+                  </li>
+                  <li class="mb-3">
+                    <i
+                      class="bi bi-check2-circle d-inline me-2"
+                      style="font-size: 1rem; color: var(--brand-color)"
+                    ></i
+                    >Establish ZUMI INDUSTRY PLC as a trusted provider of
+                    eco-friendly, reliable energy solutions in Africa
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-padding" style="background: #000">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+              <h2 class="display-5 fw-bold mb-4">Partner With Us</h2>
+              <p class="text-gray mb-5">
+                Powering Ethiopia's comfort and living standards since 2023.
+                Send us an inquiry for bulk manufacturing and supply.
+              </p>
+
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="" class="text-white"> Name </label>
+                  <input
+                    type="text"
+                    class="form-control bg-dark border-secondary text-white p-3"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="" class="text-white"> Email </label>
+                  <input
+                    type="email"
+                    class="form-control bg-dark border-secondary text-white p-3"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="" class="text-white"> Message </label>
+                  <textarea
+                    class="form-control bg-dark border-secondary text-white p-3"
+                    rows="4"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="accent-btn w-100">Send Inquiry</button>
+                </div>
+              </form>
+
+              <div class="mt-5">
+                <div
+                  class="glow-card p-4 mb-4 bg-custom text-white"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <h5 class="mb-3" style="color: var(--brand-color)">
+                    Visit Us
+                  </h5>
+                  <p class="text-gray mb-0">
+                    Addis Ababa, Akaki Kality Sub-City, Woreda 07, House No. New
+                    02/02'
+                  </p>
+                </div>
+                <div
+                  class="d-flex justify-content-center gap-5 text-gray small"
+                >
+                  <span
+                    ><i class="bi bi-envelope me-2"></i
+                    >zumiindustryplc@gmail.com</span
+                  >
+                  <span
+                    ><i class="bi bi-telephone me-2"></i>+251 975 496 036 / +251
+                    975 737 373</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>

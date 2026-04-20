@@ -7,238 +7,596 @@ new #[Layout('components.layouts.guest')] class extends Component
     //
 }; ?>
 
-<div class="page-wrapper overflow-hidden">
-    <!--  Banner Section -->
-    <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end" style="
-            background-image: url({{ asset('static/assets/images/backgrounds/home-backfall.jpg') }});
-        ">
+    <main>
+      <section class="products-hero pb-5">
         <div class="container">
-            <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
-                <div class="row align-items-center">
-                    <div class="col-xl-4">
-                        <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
-                            data-aos-duration="1000">
-                            <img src="{{ asset('static/assets/images/svgs/primary-leaf.svg') }}" alt=""
-                                class="img-fluid animate-spin" />
-                            <p class="mb-0 text-white fs-5 text-opacity-70">
-                                Explore our latest installations and maintenance successes in electrical and security
-                                systems.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200"
-                    data-aos-duration="1000">
-                    <h1 class="mb-0 fs-15 text-white lh-1">Products</h1>
-                    <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
-                        <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
-                            <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
-                        </span>
-                    </a>
-                </div>
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7" data-aos="fade-right">
+              <span class="eyebrow d-inline-block mb-3">Product Range</span>
+              <h1 class="hero-title mb-4">
+                Power, Freshness, and Everyday Utility.
+              </h1>
+              <p class="lead text-gray mb-4">
+                Explore our diverse catalogue of products designed to meet the
+                needs of households and retailers alike, backed by our
+                commitment to quality and modern production.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#catalogue" class="accent-btn">Browse Catalogue</a>
+                <a
+                  href="contact.html"
+                  class="btn btn-outline-light rounded-5 px-4 py-3"
+                >
+                  Request Partnership
+                </a>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects Section -->
-
-    {{-- <livewire:public.sections.projects /> --}}
-
-    <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
-        <div class="d-flex flex-column gap-5 gap-xl-11">
-            <div class="container">
-                <div class="row gap-7 gap-xl-0">
-                    <div class="col-xl-4 col-xxl-4">
-                        <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                            data-aos-duration="1000">
-                            <span
-                                class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">01</span>
-                            <hr class="border-line" />
-                            <span class="badge text-bg-dark">Products</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-xxl-7">
-                        <div class="row">
-                            <div class="col-xxl-8">
-                                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                                    data-aos-duration="1000">
-                                    <h2 class="mb-0">Products with our partners</h2>
-                                    <p class="fs-5 mb-0">
-                                        We offer a curated selection of top-tier electrical and security products from
-                                        leading industry partners, ensuring quality and reliability for our clients.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-5" data-aos="fade-left">
+              <div class="hero-panel">
+                <h3 class="mb-3">Trusted Product Portfolio</h3>
+                <p class="text-gray mb-0">
+                  Our product range is developed to serve everyday consumer
+                  needs with dependable performance, consistent quality, and
+                  packaging designed for strong retail appeal.
+                </p>
+                <div class="hero-feature-grid">
+                  <div class="hero-feature">
+                    <span>Quality Focus</span>
+                  </div>
+                  <div class="hero-feature">
+                    <span>
+Manufacturing Excellence
+                    </span>
+                  </div>
+                  <div class="hero-feature">
+                    <span>
+Strategic Market Positioning
+                    </span>
+                  </div>
                 </div>
+              </div>
             </div>
-            <livewire:public.sections.products />
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Our Process Section -->
-    <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="process">
+      <section id="catalogue" class="section-padding" style="background: #111">
         <div class="container">
-            <div class="d-flex flex-column gap-5 gap-xl-10">
-                <div class="row gap-7 gap-xl-0">
-                    <div class="col-xl-4 col-xxl-4">
-                        <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                            data-aos-duration="1000">
-                            <span
-                                class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">02</span>
-                            <hr class="border-line bg-white" />
-                            <span class="badge text-dark bg-white">Our Process</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-xxl-7">
-                        <div class="row">
-                            <div class="col-xxl-8">
-                                <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                                    data-aos-duration="1000">
-                                    <h2 class="mb-0 text-white">Our Process</h2>
-                                    <p class="fs-5 mb-0 text-white text-opacity-70">
-                                        Our structured approach ensures efficiency, safety, and client satisfaction from
-                                        start to finish.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+              <span class="eyebrow d-inline-block mb-3">Categories</span>
+              <h2 class="display-5 fw-bold mb-4">
+                Find the Right Product Faster
+              </h2>
+              <p class="lead text-gray">
+                Explore our catalogue by category to quickly find personal care
+                and energy solutions crafted for households, retailers, and
+                distribution partners.
+              </p>
+            </div>
+          </div>
+
+          <div class="filter-wrap mb-5" data-aos="fade-up" data-aos-delay="100">
+            <button type="button" class="filter-chip active" data-filter="all">
+              All Products
+            </button>
+            <button type="button" class="filter-chip" data-filter="deodorant">
+              Deodorant Spray
+            </button>
+            <button type="button" class="filter-chip" data-filter="body-splash">
+              Body Splash
+            </button>
+            <button type="button" class="filter-chip" data-filter="battery">
+              Battery
+            </button>
+          </div>
+
+          <div class="row g-4" id="productGrid">
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="deodorant"
+              data-aos="fade-up"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/deodrant_spary/Aura.png"
+                  alt="Aura product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Deodorant Spray</span>
+                  <h4 class="h5 mb-2">Aura</h4>
+                  <p class="product-note">Fresh floral scent profile.</p>
                 </div>
-                <div class="row g-4">
-    <!-- Step 1 -->
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
-            <div class="step-circle mx-auto mb-3">
-                <i class="fa fa-comments text-white fa-lg"></i>
-                <span class="step-number">1</span>
+              </a>
             </div>
-            <h5 class="text-primary mb-2 gradient-underline">Consultation & Site Survey</h5>
-            <p class="text-muted mb-0">
-                Understanding client needs and site requirements.
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="deodorant"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/deodrant_spary/Vanilla.png"
+                  alt="Vanilla product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Deodorant Spray</span>
+                  <h4 class="h5 mb-2">Vanilla</h4>
+                  <p class="product-note">Warm vanilla with a soft finish.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="deodorant"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/deodrant_spary/Rosea.png"
+                  alt="Rosea product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Deodorant Spray</span>
+                  <h4 class="h5 mb-2">Rosea</h4>
+                  <p class="product-note">Elegant rose-inspired freshness.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="deodorant"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/deodrant_spary/Pure.png"
+                  alt="Pure product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Deodorant Spray</span>
+                  <h4 class="h5 mb-2">Pure</h4>
+                  <p class="product-note">Clean and minimal for daily use.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="deodorant"
+              data-aos="fade-up"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/deodrant_spary/Pinkie.png"
+                  alt="Pinkie product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Deodorant Spray</span>
+                  <h4 class="h5 mb-2">Pinkie</h4>
+                  <p class="product-note">Playful fruity floral expression.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/night_allure.png"
+                  alt="Ask Night Allure product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Ask Night Allure</h4>
+                  <p class="product-note">Evening wear with musk and amber.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Pink_Crush.png"
+                  alt="Pink Crush product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Pink Crush</h4>
+                  <p class="product-note">Berry and vanilla with a fun edge.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Blush_Charm.png"
+                  alt="Blush Charm product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Blush Charm</h4>
+                  <p class="product-note">
+                    Soft floral notes for everyday use.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Rose_Embrace.png"
+                  alt="Rose Embrace product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Rose Embrace</h4>
+                  <p class="product-note">
+                    Romantic rose-focused presentation.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Midnight_Aura.png"
+                  alt="Midnight Aura product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Midnight Aura</h4>
+                  <p class="product-note">
+                    Confident evening fragrance profile.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Coconut_Desire.png"
+                  alt="Coconut Desire product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Coconut Desire</h4>
+                  <p class="product-note">
+                    Tropical freshness with smooth warmth.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Forever_Bloom.png"
+                  alt="Forever Bloom product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Forever Bloom</h4>
+                  <p class="product-note">Long-lasting floral harmony.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/The_One_Rose.png"
+                  alt="The One Rose product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">The One Rose</h4>
+                  <p class="product-note">Signature rose scent and identity.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Petal_Silk.png"
+                  alt="Petal Silk product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Petal Silk</h4>
+                  <p class="product-note">
+                    Delicate floral blend with softness.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Golden_Wish.png"
+                  alt="Golden Wish product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Golden Wish</h4>
+                  <p class="product-note">
+                    Premium expression with radiant notes.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Stellar_Glow.png"
+                  alt="Stellar Glow product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Stellar Glow</h4>
+                  <p class="product-note">Bright energetic freshness.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Aqua_Breeze.png"
+                  alt="Aqua Breeze product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Aqua Breeze</h4>
+                  <p class="product-note">
+                    Aquatic freshness inspired by ocean air.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Nude_Vanilla.png"
+                  alt="Nude Vanilla product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Nude Vanilla</h4>
+                  <p class="product-note">
+                    Smooth vanilla with subtle freshness.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="body-splash"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img
+                  src="./assets/img/body_splash/Peach_Coral.png"
+                  alt="Peach Coral product"
+                />
+                <div class="card-body">
+                  <span class="product-category">Body Splash</span>
+                  <h4 class="h5 mb-2">Peach Coral</h4>
+                  <p class="product-note">Juicy and vibrant peach profile.</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 col-xl-3 product-item"
+              data-category="battery"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <a href="product-detail.html" class="product-grid-card">
+                <img src="./assets/img/new/Shadow.png" alt="Z Shadow product" />
+                <div class="card-body">
+                  <span class="product-category">Battery</span>
+                  <h4 class="h5 mb-2">Z Shadow</h4>
+                  <p class="product-note">
+                    Alkaline dry cell battery for daily-use devices.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding bg-custom text-white">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+              <span class="eyebrow d-inline-block mb-3">Why ZUMI</span>
+              <h2 class="display-5 fw-bold mb-4">
+                Grounded in Quality and Modern Production
+              </h2>
+              <p class="lead text-gray">
+                ZUMI INDUSTRY PLC combines modern manufacturing, careful quality
+                control, and market-focused product development to deliver
+                dependable solutions customers can trust.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up">
+              <div class="section-card">
+                <i class="bi bi-factory"></i>
+                <h3 class="h4 mb-3">Modern Manufacturing</h3>
+                <p class="text-gray mb-0">
+                  Our production facilities are organized for efficiency,
+                  consistency, and reliable output across every product line.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="section-card">
+                <i class="bi bi-shield-check"></i>
+                <h3 class="h4 mb-3">Quality Assurance</h3>
+                <p class="text-gray mb-0">
+                  Each product goes through controlled production and inspection
+                  processes to help maintain safety, consistency, and customer
+                  confidence.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-card">
+                <i class="bi bi-geo-alt"></i>
+                <h3 class="h4 mb-3">Strategic Reach</h3>
+                <p class="text-gray mb-0">
+                  We are positioned to support growing market demand with
+                  reliable supply capabilities for wholesalers, retailers, and
+                  distribution channels.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding" style="background: #111">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6" data-aos="fade-right">
+              <span class="eyebrow d-inline-block mb-3">Solutions</span>
+              <h2 class="display-5 fw-bold mb-4">
+                Product Lines Backed by Real Operational Value
+              </h2>
+              <ul class="value-list">
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span
+                    >Reliable consumer products developed for everyday
+                    household use and strong retail performance.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span
+                    >Attractive packaging and brand presentation that improve
+                    shelf visibility and strengthen buyer confidence.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span
+                    >Product categories that help customers and partners browse
+                    the range clearly and identify the right solution faster.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span
+                    >A focused catalogue experience that supports product
+                    discovery, comparison, and purchase inquiry.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="section-card">
+                <h3 class="mb-4">Built for Market Confidence</h3>
+                <p class="text-gray">
+                  Our product catalogue reflects the company’s commitment to
+                  dependable manufacturing, attractive presentation, and
+                  customer-focused solutions that support both everyday users
+                  and business partners.
+                </p>
+                <a href="product-detail.html" class="accent-btn mt-3">
+                  View Sample Product Detail
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding" style="background: #000">
+        <div class="container">
+          <div class="cta-panel text-center" data-aos="fade-up">
+            <span class="eyebrow d-inline-block mb-3">Partner With Us</span>
+            <h2 class="display-5 fw-bold mb-4">
+              Looking for Bulk Supply or Distribution?
+            </h2>
+            <p class="lead text-gray mb-4">
+              Reach out to discuss bulk orders, supply opportunities, or
+              distribution partnerships with ZUMI INDUSTRY PLC.
             </p>
-        </div>
-    </div>
-
-    <!-- Step 2 -->
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
-            <div class="step-circle mx-auto mb-3">
-                <i class="fa fa-pencil-ruler text-white fa-lg"></i>
-                <span class="step-number">2</span>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="contact.html" class="accent-btn">Send Inquiry</a>
+              <a
+                href="product-detail.html"
+                class="btn btn-outline-light rounded-5 px-4 py-3"
+              >
+                Open Product Detail
+              </a>
             </div>
-            <h5 class="text-primary mb-2 gradient-underline">Design & Planning</h5>
-            <p class="text-muted mb-0">
-                Creating tailored engineering solutions.
-            </p>
+          </div>
         </div>
-    </div>
-
-    <!-- Step 3 -->
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
-            <div class="step-circle mx-auto mb-3">
-                <i class="fa fa-tools text-white fa-lg"></i>
-                <span class="step-number">3</span>
-            </div>
-            <h5 class="text-primary mb-2 gradient-underline">Installation & Integration</h5>
-            <p class="text-muted mb-0">
-                Executing projects with precision and safety.
-            </p>
-        </div>
-    </div>
-
-    <!-- Step 4 -->
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
-            <div class="step-circle mx-auto mb-3">
-                <i class="fa fa-check-circle text-white fa-lg"></i>
-                <span class="step-number">4</span>
-            </div>
-            <h5 class="text-primary mb-2 gradient-underline">Testing & Commissioning</h5>
-            <p class="text-muted mb-0">
-                Ensuring optimal performance of all systems.
-            </p>
-        </div>
-    </div>
-
-    <!-- Step 5 -->
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="h-100 p-4 bg-gradient-light rounded-4 shadow-lg step-card text-center position-relative overflow-hidden">
-            <div class="step-circle mx-auto mb-3">
-                <i class="fa fa-headset text-white fa-lg"></i>
-                <span class="step-number">5</span>
-            </div>
-            <h5 class="text-primary mb-2 gradient-underline">Maintenance & Support</h5>
-            <p class="text-muted mb-0">
-                Providing long-term reliability and emergency support.
-            </p>
-        </div>
-    </div>
-</div>
-
-<style>
-/* Card gradient background */
-.bg-gradient-light {
-    background: linear-gradient(135deg, #fdfdfd, #f0f0f0);
-}
-
-/* Card hover effect */
-.step-card:hover {
-    transform: translateY(-8px) rotate(-1deg);
-    box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.15);
-    transition: all 0.4s ease;
-}
-
-/* Step circle with icon */
-.step-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #7fb2ff, #ff0000);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 0.5rem;
-}
-
-.step-number {
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    background: #ffc107;
-    color: #fff;
-    width: 24px;
-    height: 24px;
-    font-size: 0.75rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    border: 2px solid #fff;
-}
-
-/* Gradient underline for titles */
-.gradient-underline {
-    display: inline-block;
-    position: relative;
-}
-.gradient-underline::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 50%;
-    background: linear-gradient(90deg, #ec4b4b, #530707);
-    margin-top: 4px;
-    border-radius: 2px;
-}
-</style>
-
-            </div>
-        </div>
-    </section>
-
-</div>
+      </section>
+    </main>
