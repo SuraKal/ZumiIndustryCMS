@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Amen Trading PLC</title>
     {{-- Generate the favicons and some meta tag with description only --}}
-        <meta name="description"
+    <meta name="description"
         content="The Amen Trading PLC is a growing and reliable provider of electrical and electro-mechanical solutions with over eight years of experience in Ethiopia. We focus on safety, innovation, and quality craftsmanship for dependable engineering services." />
 
 

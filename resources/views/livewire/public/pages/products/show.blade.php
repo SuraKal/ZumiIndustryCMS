@@ -52,7 +52,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                     </div>
                     <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200"
                         data-aos-duration="1000">
-                        <h1 class="mb-0 fs-16 text-white lh-1">
+                        <h1 class="mb-0 fs-16 text-white lh-1 text-truncate">
                             {{ $name }}
                         </h1>
                         <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
@@ -84,6 +84,12 @@ new #[Layout('components.layouts.guest')] class extends Component
                                 <p class="mb-0">Partner</p>
                                 <p class="mb-0 text-dark fs-5 fw-medium">
                                     {{ $partner }}
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
+                                <p class="mb-0">Name</p>
+                                <p class="mb-0 text-dark fs-5 fw-medium">
+                                    {{ $name }}
                                 </p>
                             </div>
                         </div>
