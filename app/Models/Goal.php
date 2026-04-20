@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Str;
 
 class Goal extends Model
@@ -50,5 +51,10 @@ class Goal extends Model
         }
 
         return $slug;
+    }
+
+    public function aims(): HasMany
+    {
+        return $this->hasMany(Aim::class);
     }
 }

@@ -5,6 +5,7 @@ namespace App\Filament\Resources\Goals;
 use App\Filament\Resources\Goals\Pages\CreateGoal;
 use App\Filament\Resources\Goals\Pages\EditGoal;
 use App\Filament\Resources\Goals\Pages\ListGoals;
+use App\Filament\Resources\Goals\RelationManagers\AimsRelationManager;
 use App\Filament\Resources\Goals\Schemas\GoalForm;
 use App\Filament\Resources\Goals\Tables\GoalsTable;
 use App\Models\Goal;
@@ -35,7 +36,7 @@ class GoalResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            AimsRelationManager::class,
         ];
     }
 

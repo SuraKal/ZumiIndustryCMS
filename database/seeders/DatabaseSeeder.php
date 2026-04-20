@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Database\Seeders\TestimonialSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,17 +23,17 @@ class DatabaseSeeder extends Seeder
 
             $user = User::factory()->create([
                 'name' => ucfirst(str_replace('_', ' ', $positionName)),
-                'email' => $positionName . '@mail.com',
-                'password' => $positionName . '@mail.com', // Default password
+                'email' => $positionName.'@mail.com',
+                'password' => $positionName.'@mail.com', // Default password
             ]);
 
             $position = \App\Models\Position::firstOrCreate(['name' => $positionName]);
 
-            if($user && $position){
+            if ($user && $position) {
                 $user?->positions()->attach($position->id);
             }
         }
-        
+
         $this->call([
             PageSeeder::class,
             SocialmediaSeeder::class,
@@ -44,7 +43,8 @@ class DatabaseSeeder extends Seeder
             GallerySeeder::class,
             ProjectSeeder::class,
             FaqSeeder::class,
-            ProductPartnerSeeder::class
+            ProductPartnerSeeder::class,
+            GoalAimSeeder::class,
             // ShieldSeeder::class
         ]);
     }
