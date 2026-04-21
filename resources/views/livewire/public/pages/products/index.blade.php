@@ -24,7 +24,7 @@ new #[Layout('components.layouts.guest')] class extends Component
               <div class="d-flex flex-wrap gap-3">
                 <a href="#catalogue" class="accent-btn">Browse Catalogue</a>
                 <a
-                  href="contact.html"
+                  href="{{ route('public.contact') }}"
                   class="btn btn-outline-light rounded-5 px-4 py-3"
                 >
                   Request Partnership
@@ -97,7 +97,7 @@ Strategic Market Positioning
               data-category="deodorant"
               data-aos="fade-up"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/deodrant_spary/Aura.png') }}"
                   alt="Aura product"
@@ -115,7 +115,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="50"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/deodrant_spary/Vanilla.png') }}"
                   alt="Vanilla product"
@@ -133,7 +133,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/deodrant_spary/Rosea.png') }}"
                   alt="Rosea product"
@@ -151,7 +151,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="150"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/deodrant_spary/Pure.png') }}"
                   alt="Pure product"
@@ -168,7 +168,7 @@ Strategic Market Positioning
               data-category="deodorant"
               data-aos="fade-up"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/deodrant_spary/Pinkie.png') }}"
                   alt="Pinkie product"
@@ -186,7 +186,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="50"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/night_allure.png') }}"
                   alt="Ask Night Allure product"
@@ -204,7 +204,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Pink_Crush.png') }}"
                   alt="Pink Crush product"
@@ -222,7 +222,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="150"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Blush_Charm.png') }}"
                   alt="Blush Charm product"
@@ -241,7 +241,7 @@ Strategic Market Positioning
               data-category="body-splash"
               data-aos="fade-up"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Rose_Embrace.png') }}"
                   alt="Rose Embrace product"
@@ -261,7 +261,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="50"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Midnight_Aura.png') }}"
                   alt="Midnight Aura product"
@@ -281,7 +281,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Coconut_Desire.png') }}"
                   alt="Coconut Desire product"
@@ -301,7 +301,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="150"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Forever_Bloom.png') }}"
                   alt="Forever Bloom product"
@@ -318,7 +318,7 @@ Strategic Market Positioning
               data-category="body-splash"
               data-aos="fade-up"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/The_One_Rose.png') }}"
                   alt="The One Rose product"
@@ -336,7 +336,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="50"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Petal_Silk.png') }}"
                   alt="Petal Silk product"
@@ -356,7 +356,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Golden_Wish.png') }}"
                   alt="Golden Wish product"
@@ -376,7 +376,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="150"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Stellar_Glow.png') }}"
                   alt="Stellar Glow product"
@@ -393,7 +393,7 @@ Strategic Market Positioning
               data-category="body-splash"
               data-aos="fade-up"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Aqua_Breeze.png') }}"
                   alt="Aqua Breeze product"
@@ -413,7 +413,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="50"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Nude_Vanilla.png') }}"
                   alt="Nude Vanilla product"
@@ -433,7 +433,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img
                   src="{{ asset('static/assets/img/body_splash/Peach_Coral.png') }}"
                   alt="Peach Coral product"
@@ -451,7 +451,7 @@ Strategic Market Positioning
               data-aos="fade-up"
               data-aos-delay="150"
             >
-              <a href="product-detail.html" class="product-grid-card">
+              <a href="{{ route('public.products') }}" class="product-grid-card">
                 <img src="{{ asset('static/assets/img/new/Shadow.png') }}" alt="Z Shadow product" />
                 <div class="card-body">
                   <span class="product-category">Battery</span>
@@ -567,7 +567,7 @@ Strategic Market Positioning
                   customer-focused solutions that support both everyday users
                   and business partners.
                 </p>
-                <a href="product-detail.html" class="accent-btn mt-3">
+                <a href="{{ route('public.products') }}" class="accent-btn mt-3">
                   View Sample Product Detail
                 </a>
               </div>
@@ -588,9 +588,9 @@ Strategic Market Positioning
               distribution partnerships with ZUMI INDUSTRY PLC.
             </p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
-              <a href="contact.html" class="accent-btn">Send Inquiry</a>
+              <a href="{{ route('public.contact') }}" class="accent-btn">Send Inquiry</a>
               <a
-                href="product-detail.html"
+                href="{{ route('public.products') }}"
                 class="btn btn-outline-light rounded-5 px-4 py-3"
               >
                 Open Product Detail

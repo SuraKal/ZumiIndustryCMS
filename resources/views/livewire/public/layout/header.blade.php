@@ -10,7 +10,7 @@ new class extends Component {
 
 <nav class="navbar navbar-expand-lg fixed-top py-3">
     <div class="container">
-        <a class="navbar-brand logo" href="#hero">
+        <a class="navbar-brand logo" href="{{ route('home') }}">
             <img src="{{ asset('static/assets/img/new/logo.png') }}" height="80" alt="ZUMI INDUSTRY PLC Logo" />
             <!-- style="filter: brightness(0) invert(1)" -->
         </a>
@@ -23,21 +23,21 @@ new class extends Component {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="{{ route('public.about') }}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
+                    <a class="nav-link" href="{{ route('public.products') }}">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="{{ route('public.contact') }}">Contact</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="contact.html" class="accent-btn" style="
+                    <a href="{{ route('public.contact') }}" class="accent-btn" style="
                     padding: 10px 25px;
                     font-size: 0.9rem;
                     text-decoration: none;

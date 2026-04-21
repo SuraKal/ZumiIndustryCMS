@@ -7,7 +7,8 @@ use Livewire\Volt\Volt;
 Volt::route('/', 'public.landing')->name('home');
 Volt::route('/about', 'public.pages.about')->name('public.about');
 Volt::route('/contact', 'public.pages.contact')->name('public.contact');
-Volt::route('/products', 'public.pages.contact')->name('public.contact');
+Volt::route('/products', 'public.pages.products.index')->name('public.products');
+Volt::route('/product/{product:slug}', 'public.pages.products.show')->name('public.products.show');
 
 
 
@@ -16,9 +17,6 @@ Volt::route('/blog/{post:slug}', 'public.pages.blog.show')->name('public.blogs.s
 
 Volt::route('/blog/category/{category:slug}', 'public.pages.blog.category.blog')->name('public.blogs.category.show');
 
-
-Volt::route('/project/{project:uuid}', 'public.pages.projects.show')->name('public.projects.show');
-Volt::route('/product/{product:uuid}', 'public.pages.products.show')->name('public.products.show');
 
 Volt::route('/404', 'public.pages.error.404')->name('errors.404');
 

@@ -26,9 +26,9 @@ new #[Layout('components.layouts.guest')] class extends Component
                 energize a nation.
               </p>
               <div class="d-flex gap-4">
-                <a href="products.html" class="accent-btn">Explore Products</a>
+                <a href="{{ route('public.products') }}" class="accent-btn">Explore Products</a>
                 <a
-                  href="about.html"
+                  href="{{ route('public.about') }}"
                   class="btn btn-outline-light rounded-5 px-4 d-flex align-items-center"
                   >Our Story</a
                 >
@@ -121,7 +121,7 @@ new #[Layout('components.layouts.guest')] class extends Component
               <!-- Deodorants -->
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -141,7 +141,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -163,7 +163,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -183,7 +183,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -203,7 +203,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -223,7 +223,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -244,7 +244,7 @@ new #[Layout('components.layouts.guest')] class extends Component
               <!-- Body Splashes -->
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -264,7 +264,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -284,7 +284,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -306,7 +306,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -328,7 +328,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -350,7 +350,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -372,7 +372,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -394,7 +394,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -416,7 +416,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -438,7 +438,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -460,7 +460,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -482,7 +482,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -504,7 +504,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -526,7 +526,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img
@@ -549,7 +549,7 @@ new #[Layout('components.layouts.guest')] class extends Component
               <!-- Battery for reference -->
               <div class="swiper-slide">
                 <a
-                  href="product-detail.html"
+                  href="{{ route('public.products') }}"
                   class="product-slide product-link"
                 >
                   <img

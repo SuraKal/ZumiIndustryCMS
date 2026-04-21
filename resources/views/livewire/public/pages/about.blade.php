@@ -22,7 +22,7 @@ new #[Layout('components.layouts.guest')] class extends Component
               <div class="d-flex flex-wrap gap-3">
                 <a href="#overview" class="accent-btn">Discover Our Story</a>
                 <a
-                  href="contact.html"
+                  href="{{ route('public.contact') }}"
                   class="btn btn-outline-light rounded-5 px-4 py-3"
                 >
                   Connect With Us
@@ -288,9 +288,9 @@ new #[Layout('components.layouts.guest')] class extends Component
               information, we are ready to start the conversation.
             </p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
-              <a href="contact.html" class="accent-btn">Get in Touch</a>
+              <a href="{{ route('public.contact') }}" class="accent-btn">Get in Touch</a>
               <a
-                href="products.html"
+                href="{{ route('public.products') }}"
                 class="btn btn-outline-light rounded-5 px-4 py-3"
               >
                 Explore Products

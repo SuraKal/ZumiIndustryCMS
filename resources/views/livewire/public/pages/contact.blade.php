@@ -231,7 +231,7 @@ new #[Layout('components.layouts.guest')] class extends Component
             <div class="d-flex flex-wrap justify-content-center gap-3">
               <a href="#contact-form" class="accent-btn">Get in Touch</a>
               <a
-                href="about.html"
+                href="{{ route('public.about') }}"
                 class="btn btn-outline-light rounded-5 px-4 py-3"
               >
                 Learn More About Us

@@ -11,9 +11,9 @@ new #[Layout('components.layouts.guest')] class extends Component
     <section class="product-hero pb-5">
         <div class="container">
             <div class="breadcrumb-nav mb-4" data-aos="fade-up">
-                <a href="index.html">Home</a>
+                <a href="{{ route('home') }}">Home</a>
                 <span class="mx-2">/</span>
-                <a href="products.html">Products</a>
+                <a href="{{ route('public.products') }}">Products</a>
                 <span class="mx-2">/</span>
                 <span class="current">Z Shadow</span>
             </div>
@@ -96,8 +96,8 @@ new #[Layout('components.layouts.guest')] class extends Component
                     </ul>
 
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="contact.html" class="accent-btn">Request Quote</a>
-                        <a href="products.html" class="btn btn-outline-light rounded-5 px-4 py-3">
+                        <a href="{{ route('public.contact') }}" class="accent-btn">Request Quote</a>
+                        <a href="{{ route('public.products') }}" class="btn btn-outline-light rounded-5 px-4 py-3">
                             Back to Products
                         </a>
                     </div>
@@ -176,7 +176,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
             <div class="row g-4">
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up">
-                    <a href="product-detail.html" class="similar-card">
+                    <a href="{{ route('public.products') }}" class="similar-card">
                         <img src="{{ asset('static/assets/img/deodrant_spary/Aura.png') }}" alt="Aura product" />
                         <div class="card-body">
                             <h4 class="h5 mb-2">Aura</h4>
@@ -185,7 +185,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                     </a>
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <a href="product-detail.html" class="similar-card">
+                    <a href="{{ route('public.products') }}" class="similar-card">
                         <img src="{{ asset('static/assets/img/deodrant_spary/Pure.png') }}" alt="Pure product" />
                         <div class="card-body">
                             <h4 class="h5 mb-2">Pure</h4>
@@ -194,7 +194,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                     </a>
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                    <a href="product-detail.html" class="similar-card">
+                    <a href="{{ route('public.products') }}" class="similar-card">
                         <img src="{{ asset('static/assets/img/body_splash/Pink_Crush.png') }}" alt="Pink Crush product" />
                         <div class="card-body">
                             <h4 class="h5 mb-2">Pink Crush</h4>
@@ -203,7 +203,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                     </a>
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                    <a href="product-detail.html" class="similar-card">
+                    <a href="{{ route('public.products') }}" class="similar-card">
                         <img src="{{ asset('static/assets/img/body_splash/Aqua_Breeze.png') }}" alt="Aqua Breeze product" />
                         <div class="card-body">
                             <h4 class="h5 mb-2">Aqua Breeze</h4>
@@ -227,7 +227,7 @@ new #[Layout('components.layouts.guest')] class extends Component
                         partnerships, or more information about Z Shadow and other
                         ZUMI products.
                     </p>
-                    <a href="contact.html" class="accent-btn">Contact Sales</a>
+                    <a href="{{ route('public.contact') }}" class="accent-btn">Contact Sales</a>
                 </div>
             </div>
         </div>

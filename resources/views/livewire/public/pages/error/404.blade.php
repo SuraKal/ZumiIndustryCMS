@@ -9,7 +9,7 @@ new #[Layout('components.layouts.guest')] class extends Component
 
 
 <!-- ======= 404 Hero ======= -->
-      <section class="hero__v6 section text-center">
+      <section class="hero__v6 section text-center pb-5">
         <div class="container mt-5">
           <div class="row justify-content-center">
             <div class="col-lg-7">
@@ -25,20 +25,13 @@ new #[Layout('components.layouts.guest')] class extends Component
                 Let’s get you back to something fresh.
               </p>
 
-              <img
-                src="{{ asset('static/assets/img/404.jpg') }}"
-                class="img-fluid rounded shadow mb-4"
-                style="max-height: 260px; object-fit: cover"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              />
 
               <div class="mt-4" data-aos="fade-up" data-aos-delay="400">
-                <a href="{{ route('home') }}" class="btn btn-primary px-4 py-2 me-2">
+                <a href="{{ route('home') }}" class="accent-btn px-4 py-2 me-2">
                   <i class="bi bi-house-door-fill me-2"></i> Go Home
                 </a>
 
-                <a href="{{ route('public.contact') }}" class="btn btn-outline-brand px-4 py-2">
+                <a href="{{ route('public.contact') }}" class="btn btn-outline-brand text-white px-4 py-2">
                   <i class="bi bi-envelope-fill me-2"></i> Contact Us
                 </a>
               </div>
