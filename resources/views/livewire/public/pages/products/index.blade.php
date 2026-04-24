@@ -99,6 +99,11 @@ Strategic Market Positioning
             </button>
           </div>
 
+
+
+
+
+          
           <div class="row g-4" id="productGrid">
 
             @foreach($products as $product)
