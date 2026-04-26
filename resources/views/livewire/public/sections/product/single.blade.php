@@ -8,14 +8,6 @@ new class extends Component {
     public function mount(Product $product){
         $this->product = $product;
     }
-
-
-
-
-
-
-
-    
 }; ?>
 
 <div class="col-sm-6 col-lg-4 col-xl-3 product-item" data-aos="fade-up">
