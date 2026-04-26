@@ -10,7 +10,12 @@ new class extends Component {
     }
 }; ?>
 
-<div class="col-sm-6 col-lg-4 col-xl-3 product-item" data-aos="fade-up">
+<?php
+$categoryName = $categoryName ?? 'Uncategorized';
+$categorySlug = $categorySlug ?? 'uncategorized';
+?>
+
+<div class="col-sm-6 col-lg-4 col-xl-3 product-item" data-aos="fade-up" data-category="{{ $categorySlug }}">
     <a href="{{ route('public.products.show', $product->slug) }}" class="product-grid-card">
         
         <img 
@@ -20,7 +25,7 @@ new class extends Component {
 
         <div class="card-body">
             <span class="product-category">
-                {{ $product->partner->name ?? 'Category' }}
+                {{ $categoryName }}
             </span>
 
             <h4 class="h5 mb-2">

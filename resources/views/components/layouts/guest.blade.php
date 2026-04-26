@@ -116,21 +116,27 @@
         });
       });
 
-      const filterButtons = document.querySelectorAll(".filter-chip");
-      const productItems = document.querySelectorAll(".product-item");
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-chip");
+        const productItems = document.querySelectorAll(".product-item");
 
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const filter = button.dataset.filter;
+        if (!filterButtons.length || !productItems.length) {
+          return;
+        }
 
-          filterButtons.forEach((item) => item.classList.remove("active"));
-          button.classList.add("active");
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const filter = button.dataset.filter;
 
-          productItems.forEach((product) => {
-            const matches =
-              filter === "all" || product.dataset.category === filter;
+            filterButtons.forEach((item) => item.classList.remove("active"));
+            button.classList.add("active");
 
-            product.classList.toggle("is-hidden", !matches);
+            productItems.forEach((product) => {
+              const matches =
+                filter === "all" || product.dataset.category === filter;
+
+              product.classList.toggle("d-none", !matches);
+            });
           });
         });
       });

@@ -1,16 +1,38 @@
 <?php
 
 use App\Models\Product;
+use Illuminate\Support\Str;
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
 new #[Layout('components.layouts.guest')] class extends Component
 {
     public $products;
+    public $categories;
 
-    public function mount()
+    public function mount(): void
     {
-        $this->products = Product::where('is_visible', true)->get();
+        $this->products = Product::query()
+            ->with('category')
+            ->where('is_visible', true)
+            ->get();
+
+        $this->categories = $this->products
+            ->map(function (Product $product): ?array {
+                if (! $product->category) {
+                    return null;
+                }
+
+                return [
+                    'name' => $product->category->name,
+                    'slug' => $product->category->slug ?: Str::slug($product->category->name),
+                ];
+            })
+            ->filter()
+            ->unique('slug')
+            ->sortBy('name')
+            ->values()
+            ->all();
     }
 };
 ?>
@@ -88,15 +110,11 @@ Strategic Market Positioning
             <button type="button" class="filter-chip active" data-filter="all">
               All Products
             </button>
-            <button type="button" class="filter-chip" data-filter="deodorant">
-              Deodorant Spray
-            </button>
-            <button type="button" class="filter-chip" data-filter="body-splash">
-              Body Splash
-            </button>
-            <button type="button" class="filter-chip" data-filter="battery">
-              Battery
-            </button>
+            @foreach ($categories as $category)
+              <button type="button" class="filter-chip" data-filter="{{ $category['slug'] }}">
+                {{ $category['name'] }}
+              </button>
+            @endforeach
           </div>
 
 
@@ -107,7 +125,11 @@ Strategic Market Positioning
           <div class="row g-4" id="productGrid">
 
             @foreach($products as $product)
-              @include('livewire.public.sections.product.single', ['product' => $product])
+              @include('livewire.public.sections.product.single', [
+                'product' => $product,
+                'categoryName' => $product->category?->name ?? 'Uncategorized',
+                'categorySlug' => $product->category?->slug ?: 'uncategorized',
+              ])
             @endforeach
           </div>
         </div>
